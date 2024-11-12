@@ -4,4 +4,5 @@ collection: publications
 category: conferences
 venue: "IEEE VR 2022 Workshop on 3D Content Creation for Simulation Training (TrainingXR)"
 paperurl: "https://ieeexplore.ieee.org/document/9757602"
+data: 2022-04-20
 ---
