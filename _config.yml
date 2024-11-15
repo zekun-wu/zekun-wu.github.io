@@ -12,7 +12,7 @@ title                    : "Zekun Wu / Personal Website"
 title_separator          : "-"
 name                     : &name "Zekun Wu"
 description              : &description "I'm a Ph.D. student working at the Computational Interaction Lab, Saarland University. My current research interest is mainly focused in analyzing and predicting user's fixations when interacting with interface. Before moving to the Germany, I also have few research experience in huamn reliability analysis and data visualization."
-url                      : https://zekun-wu.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://zekunwu.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
