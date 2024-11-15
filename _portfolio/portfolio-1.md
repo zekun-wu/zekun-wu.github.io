@@ -1,6 +1,6 @@
 ---
 title: "Highlight-Informed Saliency Model (HISM) for GUI Design"
-excerpt: "This project explores how dynamic visual highlights influence user attention in graphical user interfaces (GUIs). Using eye-tracking data, we analyzed temporal changes in gaze behavior across free-viewing and task-driven scenarios. Our novel Highlight-Informed Saliency Model (HISM) integrates spatial and temporal data to predict attention shifts over time, outperforming existing models. These insights enable the design of more effective and user-focused GUIs.<br/><img src='/images/Model5.drawio.png'>"
+excerpt: "This project explores how dynamic visual highlights influence user attention in graphical user interfaces (GUIs). Using eye-tracking data, we analyzed temporal changes in gaze behavior across free-viewing and task-driven scenarios. Our novel Highlight-Informed Saliency Model (HISM) integrates spatial and temporal data to predict attention shifts over time, outperforming existing models. These insights enable the design of more effective and user-focused GUIs.<br/><img src='/images/Model4.drawio.png'>"
 collection: portfolio
 ---
 
