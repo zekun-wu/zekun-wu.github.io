@@ -1,6 +1,6 @@
 ---
 title: "RelEYEance: Real-Time Gaze-Based AI Reliance Detection"
-excerpt: "This project introduces the RelEYEance model for detecting user reliance on AI in real-time. Leveraging eye-tracking data, we developed a clustering pipeline to classify user reliance into over-reliance, under-reliance, and appropriate reliance during a time-sensitive monitoring task. The model enables adaptive interventions for recalibrating reliance.<br/><img src='/images/teaserfigure.pdf'>"
+excerpt: "This project introduces the RelEYEance model for detecting user reliance on AI in real-time. Leveraging eye-tracking data, we developed a clustering pipeline to classify user reliance into over-reliance, under-reliance, and appropriate reliance during a time-sensitive monitoring task. The model enables adaptive interventions for recalibrating reliance.<br/><img src='/images/teaserfigure.png'>"
 collection: portfolio
 layout: archive
 ---
