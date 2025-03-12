@@ -12,7 +12,7 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
 ## Research Interests
 
 - Eye-tracking
-- Computational Interaction
+- Human-AI Collaboration
 - Human Reliability Analysis
 - Data Visualization
 
