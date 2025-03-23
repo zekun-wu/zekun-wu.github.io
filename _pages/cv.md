@@ -9,6 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
+<div class="notice--info">
+  <p><a href="../files/CV_Zekun_Wu.pdf" class="btn btn--primary">Download CV as PDF</a></p>
+</div>
+
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
