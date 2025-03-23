@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Zekun Wu / Personal Website"
+title                    : "Zekun Wu"
 title_separator          : "-"
 name                     : &name "Zekun Wu"
 description              : &description "I'm a Ph.D. student working at the Computational Interaction Lab, Saarland University. My current research interest is mainly focused in analyzing and predicting user's fixations when interacting with interface. Before moving to the Germany, I also have few research experience in huamn reliability analysis and data visualization."
