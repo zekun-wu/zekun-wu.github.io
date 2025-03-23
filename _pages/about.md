@@ -18,7 +18,7 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
 
 ## News
 
-To be updated soon!
+- **March 2024**: Our paper has been accepted at ETRA 2025!
 
 
 ## Service
