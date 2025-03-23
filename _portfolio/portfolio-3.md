@@ -9,4 +9,4 @@ Graphical user interfaces (GUIs) often use visual highlights to guide user atten
 
 HISM incorporates spatial and temporal aspects of gaze data to better predict attention shifts over time compared to existing saliency models. It provides unique insights into how users interact with GUIs, revealing the benefits and potential trade-offs of visual highlights. The findings have practical implications for designing more intuitive and user-centered interfaces.
 
-[Read the full paper here](https://arxiv.org/abs/2405.09695)
+[Read the full paper here](https://arxiv.org/abs/2405.09695) 

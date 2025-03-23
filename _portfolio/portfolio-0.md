@@ -13,4 +13,4 @@ Real-Time Reliance Detection: Implementing an online clustering pipeline, we eva
 
 The model was validated through experiments with different AI performance levels and demonstrated effectiveness in detecting reliance deviations and guiding users towards appropriate reliance.
 
-<!-- [Read the full paper here](https://arxiv.org/abs/2405.09695) -->
+<!-- [Read the full paper here](https://arxiv.org/abs/2405.09695) --> 
