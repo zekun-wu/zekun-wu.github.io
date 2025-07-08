@@ -50,7 +50,7 @@
     <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
   {% elsif post.collection == 'publications' %}
     {% if post.venue contains "Under Review" or post.venue contains "Submitted" %}
-      <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+      <p><strong>Under Review Paper:</strong> <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% else %}
       <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% endif %}
