@@ -1,16 +1,13 @@
 ---
-title: "RelEYEance: Real-Time Gaze-Based AI Reliance Detection"
-excerpt: "This project introduces the RelEYEance model for detecting user reliance on AI in real-time. Leveraging eye-tracking data, we developed a clustering pipeline to classify user reliance into over-reliance, under-reliance, and appropriate reliance during a time-sensitive monitoring task. The model enables adaptive interventions for recalibrating reliance.<br/><img src='/images/teaserfigure.png'>"
+title: "Examining AI Prompt Design for Influencing User Beliefs"
+excerpt: "This project uncovers how subtle changes in AI-generated responses—like added detail or confident tone—can significantly steer user beliefs, based on a large-scale study we designed<br/><img src='/images/2_2_disagree.png'>"
 collection: portfolio
 layout: archive
 ---
 
-Project Page Detailed Description: AI assistance in time-critical tasks, such as drone monitoring, requires users to balance swift decision-making and proper verification of AI suggestions—what we term appropriate reliance. RelEYEance is a gaze-based clustering model designed to assess user reliance on AI in real-time. This project involved two key studies:
+Project Page Detailed Description: This project investigates how subtle variations in AI-generated responses—such as the level of detail or confidence—can shape user beliefs in nuanced ways. While prior work often focuses on whether users accept or reject AI suggestions, we examined how these features influence both the stance and strength of user beliefs.
 
-Identifying Gaze Features: Using eye-tracking data, we identified fixation count, fixation duration, and revisits as key indicators of user reliance. We distinguished between over-reliance, under-reliance, and appropriate reliance based on these metrics.
+We conducted a large-scale, pre-registered experiment with 304 participants across fact-checking and opinion tasks. By systematically varying the AI’s response detail and confidence tone, we were able to measure not just whether users changed their minds, but how much and in which direction.
 
-Real-Time Reliance Detection: Implementing an online clustering pipeline, we evaluated reliance types during task performance. Tailored interventions, such as visual and audio prompts, recalibrated reliance when over-reliance or under-reliance was detected.
+Our findings show that responses with rich detail and moderate confidence were most effective in shifting beliefs. This work offers practical insights into how AI communication design can impact human judgment—raising both opportunities and ethical considerations for LLM-powered systems.
 
-The model was validated through experiments with different AI performance levels and demonstrated effectiveness in detecting reliance deviations and guiding users towards appropriate reliance.
-
-<!-- [Read the full paper here](https://arxiv.org/abs/2405.09695) --> 
