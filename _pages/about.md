@@ -7,13 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-<div class="hero-section">
-  <div class="hero-content">
-    <h1>Zekun Wu</h1>
-    <p class="tagline">Exploring the intersection of human vision and artificial intelligence</p>
-  </div>
-</div>
-
 I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.cs.uni-saarland.de/), Saarland University, Germany. My research focuses on analyzing and predicting user fixations during interactions with interfaces. I also have prior research experience in human reliability analysis and data visualization.
 
 <div class="research-highlights">
