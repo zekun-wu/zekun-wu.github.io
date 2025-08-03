@@ -16,13 +16,15 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.masthead__inner-wrap .masthead__menu-item a {
+.masthead .masthead__inner-wrap .masthead__menu-item a,
+.masthead .greedy-nav a {
   color: white !important;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
-.masthead__inner-wrap .masthead__menu-item a:hover {
+.masthead .masthead__inner-wrap .masthead__menu-item a:hover,
+.masthead .greedy-nav a:hover {
   color: var(--accent-color) !important;
   transform: translateY(-2px);
 }
