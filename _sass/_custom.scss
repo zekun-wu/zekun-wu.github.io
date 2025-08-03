@@ -10,11 +10,14 @@
 
 /* Enhanced Header Styling */
 .masthead {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) !important;
-  color: white;
+  background: #2196F3 !important; /* Fallback color */
+  background: linear-gradient(135deg, #2196F3 0%, #4CAF50 100%) !important;
+  color: white !important;
   border-bottom: none;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Force all navigation text to be white */
 
 .masthead .masthead__inner-wrap .masthead__menu-item a,
 .masthead .greedy-nav a,

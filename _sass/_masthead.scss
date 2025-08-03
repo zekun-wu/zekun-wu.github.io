@@ -4,8 +4,9 @@
 
 .masthead {
   position: fixed;
-  background: white;
-  border-bottom: 1px solid $border-color;
+  background: #2196F3; /* Fallback solid color */
+  background: linear-gradient(135deg, #2196F3 0%, #4CAF50 100%);
+  border-bottom: none;
   height: $masthead-height;
   top: 0;
   width: 100%;
