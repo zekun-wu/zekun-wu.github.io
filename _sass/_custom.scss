@@ -17,19 +17,22 @@
 }
 
 .masthead .masthead__inner-wrap .masthead__menu-item a,
-.masthead .greedy-nav a {
+.masthead .greedy-nav a,
+.masthead .greedy-nav .visible-links a {
   color: white !important;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .masthead .masthead__inner-wrap .masthead__menu-item a:hover,
-.masthead .greedy-nav a:hover {
+.masthead .greedy-nav a:hover,
+.masthead .greedy-nav .visible-links a:hover {
   color: var(--accent-color) !important;
   transform: translateY(-2px);
 }
 
-.site-title {
+.site-title,
+.masthead .masthead__inner-wrap .masthead__menu-item--lg a {
   color: white !important;
   font-weight: 700;
   font-size: 1.5em;
