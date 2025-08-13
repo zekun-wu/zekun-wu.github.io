@@ -34,11 +34,12 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
 <div class="news-section">
   <h2>🗞️ Latest News</h2>
   <div class="news-item">
-    <strong>March 2024:</strong> Our paper has been accepted at ETRA 2025!
+    <strong>March 2025:</strong> Our paper has been accepted at ETRA 2025!
   </div>
 </div>
 
 
 ## Service
 
-Conferene Reviewer: ACM ICMI 2024, ETRA 2025
+Conference Reviewer: ACM ICMI 2024, ETRA 2025
+Journal Reviewer: IEEE MultiMedia
