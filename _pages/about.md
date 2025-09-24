@@ -27,7 +27,7 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
   
   <div class="research-card">
     <h3><span class="research-icon">🧒</span> Child Education</h3>
-    <p>Gaze-based proactive AI reading assistance for children: detecting attentional states (curiosity, mind-wandering) from eye-tracking during reading and delivering LLM-powered, context-aware support in solo and parent–child joint reading.</p>
+    <p>Developing child-centered AI that supports learning and engagement by modeling attention and comprehension.</p>
   </div>
 </div>
 
