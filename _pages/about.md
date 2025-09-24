@@ -26,13 +26,16 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
   </div>
   
   <div class="research-card">
-    <h3><span class="research-icon">📊</span> Data Visualization</h3>
-    <p>Creating intuitive visual representations of complex data to enhance human understanding and decision-making capabilities.</p>
+    <h3><span class="research-icon">🧒</span> Child Education</h3>
+    <p>Gaze-based proactive AI reading assistance for children: detecting attentional states (curiosity, mind-wandering) from eye-tracking during reading and delivering LLM-powered, context-aware support in solo and parent–child joint reading.</p>
   </div>
 </div>
 
 <div class="news-section">
   <h2>🗞️ Latest News</h2>
+  <div class="news-item">
+    <strong>Sep 2025:</strong> One paper has been accepted at IEEE HMS!
+  </div>
   <div class="news-item">
     <strong>March 2025:</strong> Our paper has been accepted at ETRA 2025!
   </div>
@@ -42,4 +45,5 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
 ## Service
 
 Conference Reviewer: ACM ICMI 2024, ETRA 2025
+<br/>
 Journal Reviewer: IEEE MultiMedia
