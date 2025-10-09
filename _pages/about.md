@@ -44,6 +44,6 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
 
 ## Service
 
-Conference Reviewer: ACM ICMI 2024, ETRA 2025
+Conference Reviewer: ACM ICMI 2024, ETRA 2025, CHI 2026
 <br/>
 Journal Reviewer: IEEE MultiMedia
