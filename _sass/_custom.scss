@@ -200,6 +200,17 @@
   line-height: 1.6;
 }
 
+/* Ensure excerpt images are tidy and consistent */
+.archive__item-excerpt img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
 /* Archive items styling */
 .archive__item {
   border-radius: 12px;
