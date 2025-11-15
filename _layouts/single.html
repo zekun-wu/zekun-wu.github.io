@@ -36,6 +36,8 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'portfolio' %}
+          <!-- No date display for portfolio items -->
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
@@ -45,6 +47,11 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.collection == 'portfolio' and page.excerpt %}
+          <div class="portfolio-image">
+            {{ page.excerpt | markdownify }}
+          </div>
+        {% endif %}
         {{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl %}

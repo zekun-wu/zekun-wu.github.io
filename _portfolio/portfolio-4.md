@@ -1,5 +1,5 @@
 ---
-title: "Child-Centered, Attention-Aware Reading Assistant"
+title: "Gaze-based Child Reading Assistant"
 excerpt: "<img src='/images/childread.png' alt='Child reading assistant'>"
 collection: portfolio
 layout: archive
