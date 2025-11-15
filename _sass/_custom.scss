@@ -139,6 +139,30 @@
   margin: 20px 0;
   box-shadow: var(--card-shadow);
   transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Double the width of publication items on publications page */
+.page__content .archive {
+  @include breakpoint($large) {
+    @include span(12 of 12 last);
+    @include prefix(0);
+    margin-right: 0;
+  }
+}
+
+.page__content .list__item {
+  @include breakpoint($large) {
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+.page__content .publication-item {
+  @include breakpoint($large) {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .publication-item:hover {
