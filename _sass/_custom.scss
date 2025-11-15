@@ -147,8 +147,8 @@
 /* Override .archive span constraint from 10/12 to 12/12 columns for publications */
 #main .archive:has(.publication-item) {
   @include breakpoint($large) {
-    @include span(12 of 12 last) !important;
-    @include prefix(0) !important;
+    @include span(12 of 12 last);
+    @include prefix(0);
     margin-right: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
