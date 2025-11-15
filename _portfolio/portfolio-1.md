@@ -3,6 +3,7 @@ title: "RelEYEance: Real-Time Gaze-Based AI Reliance Detection"
 excerpt: "<img src='/images/teaserfigure.png' alt='RelEYEance teaser'>"
 collection: portfolio
 layout: archive
+date: 2024-05-01
 ---
 
 AI assistance in time-critical tasks, such as drone monitoring, requires users to balance swift decision-making and proper verification of AI suggestions—what we term appropriate reliance. RelEYEance is a gaze-based clustering model designed to assess user reliance on AI in real-time. This project involved two key studies:
