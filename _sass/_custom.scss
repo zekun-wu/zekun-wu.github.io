@@ -143,25 +143,49 @@
 }
 
 /* Double the width of publication items on publications page */
+/* Make the page content wider for publications */
 .page__content .archive {
   @include breakpoint($large) {
     @include span(12 of 12 last);
     @include prefix(0);
-    margin-right: 0;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 
 .page__content .list__item {
   @include breakpoint($large) {
-    padding-right: 0;
-    width: 100%;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 
 .page__content .publication-item {
   @include breakpoint($large) {
-    width: 100%;
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Override page width constraints for publications page */
+body .page__content {
+  @include breakpoint($large) {
+    margin-right: 0 !important;
+  }
+}
+
+/* Make archive items take full width */
+body .page__content .archive {
+  @include breakpoint($large) {
+    @include span(12 of 12 last);
+    @include prefix(0);
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 
