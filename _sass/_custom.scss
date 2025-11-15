@@ -143,17 +143,34 @@
 }
 
 /* Double the width of publication items on publications page */
-/* Make the page content wider for publications */
+/* Target the page with wide class or publications page specifically */
+.page--wide .page__content .archive,
+body[class*="publications"] .page__content .archive,
 .page__content .archive {
   @include breakpoint($large) {
-    @include span(12 of 12 last);
-    @include prefix(0);
+    @include span(12 of 12 last) !important;
+    @include prefix(0) !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+  }
+}
+
+/* Make the page itself wider for publications */
+.page--wide,
+body[class*="publications"] .page {
+  @include breakpoint($large) {
+    @include span(12 of 12 last) !important;
+    @include prefix(0) !important;
+    @include suffix(0) !important;
     margin-right: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
   }
 }
 
+/* Remove right padding from list items */
 .page__content .list__item {
   @include breakpoint($large) {
     padding-right: 0 !important;
@@ -162,27 +179,42 @@
   }
 }
 
+/* Make publication items themselves actually double width */
+/* First, let's make the container wider, then make items wider */
 .page__content .publication-item {
   @include breakpoint($large) {
+    min-width: 1200px !important;
     width: 100% !important;
     max-width: 100% !important;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-/* Override page width constraints for publications page */
-body .page__content {
-  @include breakpoint($large) {
+    margin-left: 0 !important;
     margin-right: 0 !important;
+    padding: 30px 50px !important;
+  }
+  
+  @include breakpoint($x-large) {
+    min-width: 1600px !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 
-/* Make archive items take full width */
+/* Make the archive container wider to accommodate doubled items */
+.page__content .archive {
+  @include breakpoint($large) {
+    overflow-x: visible !important;
+    min-width: 1200px !important;
+  }
+  
+  @include breakpoint($x-large) {
+    min-width: 1600px !important;
+  }
+}
+
+/* Override archive width constraints more aggressively */
 body .page__content .archive {
   @include breakpoint($large) {
-    @include span(12 of 12 last);
-    @include prefix(0);
+    @include span(12 of 12 last) !important;
+    @include prefix(0) !important;
     margin-right: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
