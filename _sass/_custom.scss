@@ -140,6 +140,18 @@
   box-shadow: var(--card-shadow);
   transition: all 0.3s ease;
   box-sizing: border-box;
+  font-size: 0.9em; /* Reduce general text size */
+}
+
+/* Reduce font size for publication titles */
+.publication-item .archive__item-title {
+  font-size: 1.1em !important; /* Smaller than default */
+}
+
+/* Reduce font size for publication text content */
+.publication-item p {
+  font-size: 0.9em !important;
+  line-height: 1.5;
 }
 
 /* Double the width of publication items on publications page */
@@ -154,11 +166,11 @@
     max-width: 100% !important;
     float: none !important;
     overflow-x: visible !important;
-    min-width: 1200px !important;
+    min-width: 850px !important;
   }
   
   @include breakpoint($x-large) {
-    min-width: 1600px !important;
+    min-width: 1150px !important;
   }
 }
 
@@ -199,16 +211,16 @@
 /* Make publication items themselves actually double width */
 #main .archive .publication-item {
   @include breakpoint($large) {
-    min-width: 1200px !important;
+    min-width: 850px !important;
     width: 100% !important;
     max-width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding: 30px 50px !important;
+    padding: 25px 35px !important;
   }
   
   @include breakpoint($x-large) {
-    min-width: 1600px !important;
+    min-width: 1150px !important;
     width: 100% !important;
     max-width: 100% !important;
   }
