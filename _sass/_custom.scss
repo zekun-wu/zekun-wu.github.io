@@ -70,28 +70,54 @@ body {
   background-color: var(--bg-color);
 }
 
-/* Wider main content when sidebar is present */
-#main {
-  max-width: 1400px;
-  margin: 0 auto;
-}
+/* ==========================================================================
+   ABOUT PAGE - Wider content with sidebar
+   ========================================================================== */
 
-/* Expand the page content area */
-.sidebar + .page {
-  @media (min-width: 1024px) {
-    width: calc(100% - 220px);
-    max-width: 900px;
+/* Expand the main container to use more screen width */
+@media (min-width: 1024px) {
+  #main {
+    max-width: 1400px !important;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  /* Make the page content area wider when sidebar is present */
+  .sidebar + .page__content,
+  .sidebar ~ .page__content {
+    max-width: none !important;
+  }
+
+  /* Expand the page wrapper */
+  .page {
+    width: 100% !important;
+    max-width: none !important;
+    float: none !important;
+    padding-right: 2em;
+  }
+
+  /* Research highlights - 2x2 grid */
+  .research-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  /* News section full width */
+  .news-section {
+    max-width: 100%;
   }
 }
 
-/* Make research cards grid wider */
-.research-highlights {
-  max-width: 100%;
-}
+@media (min-width: 1280px) {
+  #main {
+    max-width: 1600px !important;
+  }
 
-/* News section full width */
-.news-section {
-  max-width: 100%;
+  .research-highlights {
+    gap: 25px;
+  }
 }
 
 /* Hero Section Styling */
@@ -957,6 +983,20 @@ a:hover {
 /* Page title styling */
 .page__title {
   color: var(--text-color);
+}
+
+/* Add top spacing for archive pages (Publications, Projects) */
+.archive .page__title,
+#main > .archive > h2:first-child,
+.wide .page__title {
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+/* Extra top padding for wide layout pages without sidebar */
+.layout--archive.wide #main,
+.wide #main .archive {
+  padding-top: 20px;
 }
 
 /* Archive item titles */
