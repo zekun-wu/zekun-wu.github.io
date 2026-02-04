@@ -501,6 +501,106 @@ body {
   margin-top: 12px;
 }
 
+/* ==========================================================================
+   PORTFOLIO DETAIL PAGE - Hero Section
+   ========================================================================== */
+
+.portfolio-hero {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.portfolio-hero__title {
+  font-size: 2.2em !important;
+  font-weight: 700 !important;
+  color: var(--text-color) !important;
+  margin: 0 0 16px 0 !important;
+  line-height: 1.2 !important;
+}
+
+.portfolio-hero__summary {
+  font-size: 1.15em !important;
+  color: var(--text-muted) !important;
+  margin: 0 0 20px 0 !important;
+  line-height: 1.5 !important;
+  max-width: 700px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.portfolio-hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.portfolio-hero__tag {
+  background: var(--primary-light) !important;
+  color: var(--primary-color) !important;
+  padding: 6px 16px !important;
+  border-radius: 20px !important;
+  font-size: 0.9em !important;
+  font-weight: 500 !important;
+}
+
+.portfolio-hero__image {
+  margin-top: 24px;
+}
+
+.portfolio-hero__image img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Portfolio page content styling */
+.portfolio-page-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.portfolio-page-content h2 {
+  color: var(--text-color);
+  font-size: 1.4em;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+}
+
+.portfolio-page-content p {
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 1.2em;
+}
+
+.portfolio-page-content ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.portfolio-page-content ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.portfolio-page-content ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
 /* Archive items styling */
 .archive__item {
   border-radius: 12px;

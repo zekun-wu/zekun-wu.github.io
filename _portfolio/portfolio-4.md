@@ -1,32 +1,28 @@
 ---
 title: "Gaze-based Child Reading Assistant"
+summary: "An AI-powered reading companion that adapts story prompts using real-time eye-tracking."
+tags:
+  - Eye-tracking
+  - LLMs
+  - Child Education
+  - HCI
+hero_image: "/images/childread.png"
 excerpt: ""
 collection: portfolio
-layout: archive
 date: 2025-01-15
 ---
 
-<div class="portfolio-content">
-  <div class="project-image-wrapper">
-    <img src="/images/childread.png" alt="Child reading assistant interface" class="project-image">
-  </div>
-  <div class="project-content-wrapper">
-    <p class="project-summary">
-    An AI-powered reading companion that uses real-time eye-tracking to support young children during picture-book reading, adapting narrative prompts based on visual attention patterns.
-    </p>
+## Overview
 
-    <ul class="project-highlights">
-      <li>Monitors child's gaze to detect engagement and attention shifts</li>
-      <li>Generates child-friendly narrative prompts using LLMs</li>
-      <li>Guides attention toward unexplored parts of illustrations</li>
-      <li>Supports early literacy through curiosity-driven exploration</li>
-    </ul>
+In this project, we explore how AI can support young children during picture-book reading by combining real-time eye-tracking with adaptive language generation. Our system monitors a child's visual attention as they look around a storybook page and uses this information to estimate when they are engaged or losing interest.
 
-    <div class="project-tags">
-      <span class="project-tag">Eye-tracking</span>
-      <span class="project-tag">Child-AI Interaction</span>
-      <span class="project-tag">LLM</span>
-      <span class="project-tag">Education</span>
-    </div>
-  </div>
-</div>
+## Key Contributions
+
+- Real-time gaze monitoring to detect engagement and attention shifts
+- Adaptive narrative prompts generated using LLMs based on gaze patterns
+- Gentle guidance toward unexplored parts of illustrations
+- Support for early literacy through curiosity-driven exploration
+
+## Approach
+
+Based on their gaze patterns, the AI proactively offers short, child-friendly narrative prompts that highlight what the child is currently looking at and gently guide them toward new parts of the picture. By integrating multimodal sensing, lightweight attention modeling, and LLM-based storytelling, the project aims to create a more responsive, personalized, and engaging reading experience.

@@ -1,35 +1,31 @@
 ---
 title: "Highlight-Informed Saliency Model (HISM) for GUI Design"
+summary: "A saliency model that predicts how visual highlights guide user attention in interfaces."
+tags:
+  - Eye-tracking
+  - Saliency Modeling
+  - GUI Design
+  - Visual Attention
+hero_image: "/images/Model4.drawio.png"
 excerpt: ""
 collection: portfolio
-layout: archive
 date: 2024-04-01
+paperurl: "https://arxiv.org/abs/2405.09695"
 ---
 
-<div class="portfolio-content">
-  <div class="project-image-wrapper">
-    <img src="/images/Model4.drawio.png" alt="HISM model architecture" class="project-image">
-  </div>
-  <div class="project-content-wrapper">
-    <p class="project-summary">
-    A saliency model that predicts how visual highlights in GUIs guide user attention, incorporating spatial and temporal gaze dynamics to improve interface design.
-    </p>
+## Overview
 
-    <ul class="project-highlights">
-      <li>Eye-tracking data in free-viewing and task-driven scenarios</li>
-      <li>Models temporal attention shifts better than existing approaches</li>
-      <li>Reveals benefits and trade-offs of visual highlights</li>
-      <li>Actionable insights for user-centered GUI design</li>
-    </ul>
+Graphical user interfaces (GUIs) often use visual highlights to guide user attention toward critical elements. In this project, we investigated the effects of these highlights on user gaze behavior in dynamic environments.
 
-    <div class="project-tags">
-      <span class="project-tag">Eye-tracking</span>
-      <span class="project-tag">Saliency Modeling</span>
-      <span class="project-tag">GUI Design</span>
-    </div>
+## Key Contributions
 
-    <div class="project-links">
-      <a href="https://arxiv.org/abs/2405.09695" target="_blank">Read Paper</a>
-    </div>
-  </div>
-</div>
+- Collected eye-tracking data in both free-viewing and task-driven scenarios
+- Developed HISM incorporating spatial and temporal aspects of gaze data
+- Better prediction of attention shifts over time compared to existing saliency models
+- Practical implications for designing more intuitive and user-centered interfaces
+
+## Impact
+
+HISM provides unique insights into how users interact with GUIs, revealing the benefits and potential trade-offs of visual highlights. The findings have practical implications for designing more intuitive and user-centered interfaces.
+
+[Read the full paper here](https://arxiv.org/abs/2405.09695)
