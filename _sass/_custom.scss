@@ -485,3 +485,13 @@ a:hover {
 .archive__item-excerpt {
   color: var(--text-muted);
 }
+
+/* Author tagline styling */
+.author__tagline {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-top: 0.25em;
+  margin-bottom: 1.5em;
+  line-height: 1.4;
+}

@@ -23,7 +23,8 @@ author:
   # Biographic information
   avatar           : "Zekun Wu.jpg"
   name             : "Zekun Wu"
-  pronouns         : # example: "she/her"  
+  tagline          : "Designing Human–AI Systems with Eye-Tracking"
+  pronouns         : # example: "she/her"
   bio              : # example""
   location         : "Saarbrücken, Saarland, Germany"
   employer         : "Saarland University"
