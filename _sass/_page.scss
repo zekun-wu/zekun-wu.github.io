@@ -18,13 +18,13 @@
 
 .page {
   @include breakpoint($large) {
-    float: right;
-    width: 850px;
-    padding-right: 0;
+    margin-left: 250px;
+    width: calc(100% - 270px);
+    max-width: 900px;
   }
 
   @include breakpoint($x-large) {
-    width: 1150px;
+    max-width: 1100px;
   }
 
   .page__inner-wrap {
