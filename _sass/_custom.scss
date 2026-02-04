@@ -317,43 +317,72 @@ body {
    PORTFOLIO - Modern Case Study Layout
    ========================================================================== */
 
-/* Portfolio card container */
+/* Portfolio card container - RESET ALL STYLES */
+article.portfolio-item,
+.archive__item.portfolio-item,
 .portfolio-item {
-  background: var(--card-bg) !important;
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  background-image: none !important;
   border-radius: 12px !important;
-  overflow: hidden !important;
-  box-shadow: var(--card-shadow) !important;
+  overflow: visible !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
   transition: all 0.3s ease !important;
   margin-bottom: 48px !important;
   padding: 32px !important;
 }
 
 .portfolio-item:hover {
-  box-shadow: var(--card-shadow-hover) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
   transform: none !important;
 }
 
-/* KILL THE BLUE TITLE BAR - Override all backgrounds */
-.portfolio-item .archive__item-title {
-  background: none !important;
+/* KILL THE BLUE TITLE BAR - NUCLEAR OPTION */
+.portfolio-item h2,
+.portfolio-item .archive__item-title,
+.portfolio-item h2.archive__item-title,
+article.portfolio-item h2,
+article.portfolio-item .archive__item-title {
+  background: transparent !important;
   background-color: transparent !important;
-  color: var(--text-color) !important;
-  margin: 0 0 8px 0 !important;
-  padding: 0 0 12px 0 !important;
+  background-image: none !important;
+  color: #1F2933 !important;
+  margin: 0 0 16px 0 !important;
+  padding: 0 !important;
+  padding-bottom: 12px !important;
   font-size: 1.4em !important;
   font-weight: 700 !important;
-  border-bottom: 3px solid var(--primary-color) !important;
-  display: inline-block !important;
+  border: none !important;
+  border-bottom: 3px solid #2F80ED !important;
+  border-radius: 0 !important;
+  display: block !important;
+  width: auto !important;
+  max-width: fit-content !important;
 }
 
-.portfolio-item .archive__item-title a {
-  color: var(--text-color) !important;
+.portfolio-item h2::before,
+.portfolio-item h2::after,
+.portfolio-item .archive__item-title::before,
+.portfolio-item .archive__item-title::after {
+  display: none !important;
+  content: none !important;
+}
+
+.portfolio-item h2 a,
+.portfolio-item .archive__item-title a,
+article.portfolio-item h2 a,
+article.portfolio-item .archive__item-title a {
+  color: #1F2933 !important;
   text-decoration: none !important;
-  background: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  padding: 0 !important;
 }
 
+.portfolio-item h2 a:hover,
 .portfolio-item .archive__item-title a:hover {
-  color: var(--primary-color) !important;
+  color: #2F80ED !important;
   text-decoration: none !important;
 }
 
