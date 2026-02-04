@@ -488,10 +488,11 @@ a:hover {
 
 /* Author tagline styling */
 .author__tagline {
-  font-size: 0.85em;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
-  margin-top: 0.25em;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--primary-color);
+  letter-spacing: 0.03em;
+  margin-top: 0.3em;
   margin-bottom: 1.5em;
   line-height: 1.4;
 }
