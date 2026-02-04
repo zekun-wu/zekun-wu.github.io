@@ -341,6 +341,31 @@ body {
    PORTFOLIO - Modern Case Study Layout
    ========================================================================== */
 
+/* Make portfolio page full width like publications */
+#main .archive:has(.portfolio-item) {
+  @include breakpoint($large) {
+    @include span(12 of 12 last);
+    @include prefix(0);
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    min-width: 850px !important;
+  }
+
+  @include breakpoint($x-large) {
+    min-width: 1150px !important;
+  }
+}
+
+#main .archive:has(.portfolio-item) .list__item {
+  @include breakpoint($large) {
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
 /* Portfolio card container */
 article.portfolio-item,
 .archive__item.portfolio-item,
@@ -354,6 +379,16 @@ article.portfolio-item,
   transition: all 0.3s ease !important;
   margin-bottom: 48px !important;
   padding: 28px !important;
+
+  @include breakpoint($large) {
+    min-width: 850px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  @include breakpoint($x-large) {
+    min-width: 1150px !important;
+  }
 }
 
 .portfolio-item:hover {
