@@ -1,20 +1,23 @@
 /* Custom Variables for Personalization */
 :root {
-  --primary-color: #2196F3;      /* Eye-tracking blue */
-  --secondary-color: #4CAF50;    /* AI green */
-  --accent-color: #FF9800;       /* Highlight orange */
-  --text-color: #333;
-  --bg-color: #fafafa;
-  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --primary-color: #2F80ED;      /* Clean modern blue */
+  --secondary-color: #27AE60;    /* Soft green */
+  --primary-light: #EAF2FF;      /* Light tint for badges */
+  --text-color: #1F2933;         /* Dark gray for text */
+  --text-muted: #6B7280;         /* Muted gray for secondary text */
+  --bg-color: #F7F9FB;           /* Very light gray page background */
+  --card-bg: #FFFFFF;            /* White card background */
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 /* Enhanced Header Styling */
 .masthead {
-  background: #2196F3 !important; /* Fallback color */
-  background: linear-gradient(135deg, #2196F3 0%, #4CAF50 100%) !important;
+  background: #2F80ED !important; /* Fallback color */
+  background: linear-gradient(135deg, #3B82C4 0%, #2E9F5E 100%) !important; /* Slightly desaturated */
   color: white !important;
   border-bottom: none;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Fix navigation background and force all navigation text to be white */
@@ -37,8 +40,8 @@
 .masthead .masthead__inner-wrap .masthead__menu-item a:hover,
 .masthead .greedy-nav a:hover,
 .masthead .greedy-nav .visible-links a:hover {
-  color: var(--accent-color) !important;
-  transform: translateY(-2px);
+  color: rgba(255, 255, 255, 0.85) !important;
+  text-decoration: underline;
 }
 
 .site-title,
@@ -48,9 +51,19 @@
   font-size: 1.5em;
 }
 
+/* Global page background */
+body {
+  background-color: var(--bg-color);
+}
+
+/* Main content area background */
+#main {
+  background-color: var(--bg-color);
+}
+
 /* Hero Section Styling */
 .hero-section {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background: linear-gradient(135deg, #3B82C4 0%, #2E9F5E 100%);
   color: white;
   padding: 60px 0;
   margin-bottom: 40px;
@@ -61,13 +74,27 @@
   font-size: 3em;
   font-weight: 700;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hero-content .tagline {
   font-size: 1.3em;
   margin-bottom: 30px;
   opacity: 0.95;
+}
+
+/* Venue/Year badges (e.g., ETRA 2025, IEEE THMS) */
+.venue-badge,
+.year-badge,
+.publication-venue {
+  background: var(--primary-light);
+  color: var(--primary-color);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 8px;
 }
 
 /* Research Highlights Cards */
@@ -79,17 +106,29 @@
 }
 
 .research-card {
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   padding: 30px 25px;
   box-shadow: var(--card-shadow);
   transition: all 0.3s ease;
-  border-left: 4px solid var(--primary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top accent bar instead of left border */
+.research-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--primary-color);
 }
 
 .research-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .research-card h3 {
@@ -100,6 +139,10 @@
   gap: 10px;
 }
 
+.research-card p {
+  color: var(--text-color);
+}
+
 .research-icon {
   width: 24px;
   height: 24px;
@@ -108,7 +151,7 @@
 
 /* Enhanced News Section */
 .news-section {
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   padding: 30px;
   box-shadow: var(--card-shadow);
@@ -116,24 +159,23 @@
 }
 
 .news-section h2 {
-  color: var(--primary-color);
-  border-bottom: 3px solid var(--accent-color);
+  color: var(--text-color);
+  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 10px;
   margin-bottom: 25px;
 }
 
 .news-item {
-  padding: 15px 0;
-  border-left: 3px solid var(--secondary-color);
-  padding-left: 20px;
+  padding: 15px 20px;
   margin: 15px 0;
-  background: #f8f9fa;
-  border-radius: 0 8px 8px 0;
+  background: var(--bg-color);
+  border-radius: 8px;
+  border-left: 3px solid var(--secondary-color);
 }
 
 /* Publications Styling */
 .publication-item {
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   padding: 25px;
   margin: 20px 0;
@@ -227,13 +269,22 @@
 }
 
 .publication-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Publication title links */
+.publication-item .archive__item-title a {
+  color: var(--primary-color);
+}
+
+.publication-item .archive__item-title a:hover {
+  color: #1A5BC4;
 }
 
 .under-review-badge {
-  background: linear-gradient(135deg, #b2f2bb, #69db7c);
-  color: #1b5e20;
+  background: var(--primary-light);
+  color: var(--primary-color);
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.8em;
@@ -243,7 +294,7 @@
 }
 
 .published-badge {
-  background: linear-gradient(135deg, var(--secondary-color), #45a049);
+  background: var(--secondary-color);
   color: white;
   padding: 5px 12px;
   border-radius: 20px;
@@ -255,7 +306,7 @@
 
 /* Portfolio Projects Styling */
 .portfolio-item {
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--card-shadow);
@@ -264,12 +315,12 @@
 }
 
 .portfolio-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .portfolio-item .archive__item-title {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: var(--primary-color);
   color: white;
   margin: 0;
   padding: 20px 25px;
@@ -283,6 +334,7 @@
 .portfolio-item .archive__item-excerpt {
   padding: 25px;
   line-height: 1.6;
+  color: var(--text-color);
 }
 
 /* Ensure excerpt images are tidy and consistent */
@@ -301,14 +353,14 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--card-shadow);
-  background: white;
+  background: var(--card-bg);
   margin-bottom: 25px;
   transition: all 0.3s ease;
 }
 
 .archive__item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
 }
 
 /* Responsive Design */
@@ -328,7 +380,7 @@
 
 /* Custom Button Styling */
 .btn--primary {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+  background: var(--primary-color) !important;
   border: none;
   color: white !important;
   padding: 12px 25px;
@@ -339,17 +391,88 @@
 }
 
 .btn--primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);
+  background: #1A5BC4 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(47, 128, 237, 0.3);
   color: white !important;
 }
 
 /* Footer Enhancements */
 .page__footer {
-  background: linear-gradient(135deg, #333, #555);
+  background: #1F2933;
   color: white;
 }
 
 .page__footer a {
-  color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.page__footer a:hover {
+  color: #5A9CF5;
+}
+
+/* Section Titles - consistent heading styling */
+.page__content h2,
+.archive h2 {
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.page__content h2::after,
+.archive h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+/* All links unified color */
+a {
+  color: var(--primary-color);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1A5BC4;
+}
+
+/* Sidebar/Author profile links */
+.author__urls a {
+  color: var(--text-color);
+}
+
+.author__urls a:hover {
+  color: var(--primary-color);
+}
+
+/* Social icons consistency */
+.social-icons .fa,
+.social-icons .fab,
+.social-icons .fas {
+  color: var(--primary-color);
+}
+
+/* Page title styling */
+.page__title {
+  color: var(--text-color);
+}
+
+/* Archive item titles */
+.archive__item-title a {
+  color: var(--primary-color);
+}
+
+.archive__item-title a:hover {
+  color: #1A5BC4;
+}
+
+/* Muted text for secondary information */
+.page__meta,
+.archive__item-excerpt {
+  color: var(--text-muted);
 }
