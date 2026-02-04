@@ -59,7 +59,22 @@
   {% endif %}
 
     {% if post.collection == 'portfolio' %}
-    <div class="archive__item-excerpt portfolio-content" itemprop="description">{{ post.content }}</div>
+    <div class="archive__item-excerpt portfolio-content" itemprop="description">
+      {% if post.hero_image %}
+        <img src="{{ post.hero_image }}" alt="{{ post.title }}" class="project-image">
+      {% endif %}
+      {% if post.summary %}
+        <p class="project-summary">{{ post.summary }}</p>
+      {% endif %}
+      {% if post.tags %}
+        <div class="project-tags">
+          {% for tag in post.tags %}
+            <span class="project-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+      <a href="{{ post.url }}" class="project-read-more">View Project →</a>
+    </div>
     {% elsif post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
