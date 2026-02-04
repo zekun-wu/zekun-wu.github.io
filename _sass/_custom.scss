@@ -70,6 +70,30 @@ body {
   background-color: var(--bg-color);
 }
 
+/* Wider main content when sidebar is present */
+#main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Expand the page content area */
+.sidebar + .page {
+  @media (min-width: 1024px) {
+    width: calc(100% - 220px);
+    max-width: 900px;
+  }
+}
+
+/* Make research cards grid wider */
+.research-highlights {
+  max-width: 100%;
+}
+
+/* News section full width */
+.news-section {
+  max-width: 100%;
+}
+
 /* Hero Section Styling */
 .hero-section {
   background: linear-gradient(135deg, #3B82C4 0%, #2E9F5E 100%);
