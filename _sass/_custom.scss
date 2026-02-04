@@ -317,7 +317,7 @@ body {
    PORTFOLIO - Modern Case Study Layout
    ========================================================================== */
 
-/* Portfolio card container - RESET ALL STYLES */
+/* Portfolio card container */
 article.portfolio-item,
 .archive__item.portfolio-item,
 .portfolio-item {
@@ -325,100 +325,71 @@ article.portfolio-item,
   background-color: #FFFFFF !important;
   background-image: none !important;
   border-radius: 12px !important;
-  overflow: visible !important;
+  overflow: hidden !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
   transition: all 0.3s ease !important;
   margin-bottom: 48px !important;
-  padding: 32px !important;
+  padding: 28px !important;
 }
 
 .portfolio-item:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
-  transform: none !important;
 }
 
-/* KILL THE BLUE TITLE BAR - NUCLEAR OPTION */
+/* Portfolio title - clean dark text */
 .portfolio-item h2,
 .portfolio-item .archive__item-title,
-.portfolio-item h2.archive__item-title,
 article.portfolio-item h2,
 article.portfolio-item .archive__item-title {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
   color: #1F2933 !important;
-  margin: 0 0 16px 0 !important;
-  padding: 0 !important;
-  padding-bottom: 12px !important;
-  font-size: 1.4em !important;
+  margin: 0 0 20px 0 !important;
+  padding: 0 0 12px 0 !important;
+  font-size: 1.3em !important;
   font-weight: 700 !important;
   border: none !important;
   border-bottom: 3px solid #2F80ED !important;
   border-radius: 0 !important;
-  display: block !important;
-  width: auto !important;
-  max-width: fit-content !important;
-}
-
-.portfolio-item h2::before,
-.portfolio-item h2::after,
-.portfolio-item .archive__item-title::before,
-.portfolio-item .archive__item-title::after {
-  display: none !important;
-  content: none !important;
+  display: inline-block !important;
 }
 
 .portfolio-item h2 a,
-.portfolio-item .archive__item-title a,
-article.portfolio-item h2 a,
-article.portfolio-item .archive__item-title a {
+.portfolio-item .archive__item-title a {
   color: #1F2933 !important;
   text-decoration: none !important;
   background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
-  padding: 0 !important;
 }
 
 .portfolio-item h2 a:hover,
 .portfolio-item .archive__item-title a:hover {
   color: #2F80ED !important;
-  text-decoration: none !important;
 }
 
-/* Two-column layout for desktop */
+/* Portfolio content - simple stacked layout */
 .portfolio-item .portfolio-content {
-  display: block;
+  display: block !important;
 }
 
-@media (min-width: 768px) {
-  .portfolio-item .portfolio-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    align-items: start;
-  }
-
-  .portfolio-item .project-image-wrapper {
-    grid-column: 1;
-    grid-row: 1 / span 10;
-  }
-
-  .portfolio-item .project-content-wrapper {
-    grid-column: 2;
-  }
+/* Project image - large and prominent */
+.portfolio-item .project-image-wrapper {
+  margin-bottom: 20px !important;
 }
 
-/* Project image - big and eye-catching */
 .portfolio-item .project-image {
   display: block !important;
   width: 100% !important;
   height: auto !important;
-  max-height: 280px !important;
+  max-height: 300px !important;
   object-fit: cover !important;
   border-radius: 8px !important;
-  margin-bottom: 20px !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Content wrapper */
+.portfolio-item .project-content-wrapper {
+  display: block !important;
 }
 
 /* Legacy image support */
