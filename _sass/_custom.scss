@@ -365,6 +365,15 @@ article.portfolio-item .archive__item-title {
 .portfolio-item h2 a:hover,
 .portfolio-item .archive__item-title a:hover {
   color: #2F80ED !important;
+  text-decoration: none !important;
+}
+
+/* Remove underline on card hover */
+.portfolio-item:hover h2,
+.portfolio-item:hover .archive__item-title,
+.portfolio-item:hover h2 a,
+.portfolio-item:hover .archive__item-title a {
+  text-decoration: none !important;
 }
 
 /* Portfolio content - simple stacked layout */
