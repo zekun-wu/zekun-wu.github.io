@@ -34,6 +34,9 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
 <div class="news-section">
   <h2>🗞️ Latest News</h2>
   <div class="news-item">
+    <strong>Jan 2026:</strong> My Master's student Ole successfully defended his thesis 🎉
+  </div>
+  <div class="news-item">
     <strong>Sep 2025:</strong> One paper has been accepted at IEEE HMS!
   </div>
   <div class="news-item">
