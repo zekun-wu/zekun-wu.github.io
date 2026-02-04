@@ -24,17 +24,12 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
     <h3><span class="research-icon">🔬</span> Human Reliability Analysis</h3>
     <p>Studying human performance and reliability in complex systems to improve safety and efficiency in human-machine interactions.</p>
   </div>
-  
-  <div class="research-card">
-    <h3><span class="research-icon">🧒</span> Child Education</h3>
-    <p>Developing child-centered AI that supports learning and engagement by modeling attention and comprehension.</p>
-  </div>
 </div>
 
 <div class="news-section">
   <h2>🗞️ Latest News</h2>
   <div class="news-item">
-    <strong>Jan 2026:</strong> My Master's student Ole successfully defended his thesis 🎉
+    <strong>Jan 2026:</strong> Happy to share that Master's student Ole, whom I advised, successfully defended his thesis 🎉
   </div>
   <div class="news-item">
     <strong>Sep 2025:</strong> One paper has been accepted at IEEE HMS!
@@ -47,6 +42,6 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
 
 ## Service
 
-Conference Reviewer: ACM ICMI 2024, ETRA 2025, CHI 2026
+Conference Reviewer: ACM ICMI 2024, ETRA 2025, CHI 2026, ETRA 2026
 <br/>
 Journal Reviewer: IEEE MultiMedia
