@@ -11,16 +11,15 @@
   --card-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
-/* Enhanced Header Styling */
+/* Enhanced Header Styling - Clean White Navbar */
 .masthead {
-  background: #2F80ED !important; /* Fallback color */
-  background: linear-gradient(135deg, #3B82C4 0%, #2E9F5E 100%) !important; /* Slightly desaturated */
-  color: white !important;
-  border-bottom: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #FFFFFF !important;
+  color: var(--text-color) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* Fix navigation background and force all navigation text to be white */
+/* Fix navigation background */
 .masthead .greedy-nav {
   background: transparent !important;
 }
@@ -32,7 +31,7 @@
 .masthead .masthead__inner-wrap .masthead__menu-item a,
 .masthead .greedy-nav a,
 .masthead .greedy-nav .visible-links a {
-  color: white !important;
+  color: var(--text-color) !important;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -40,15 +39,25 @@
 .masthead .masthead__inner-wrap .masthead__menu-item a:hover,
 .masthead .greedy-nav a:hover,
 .masthead .greedy-nav .visible-links a:hover {
-  color: rgba(255, 255, 255, 0.85) !important;
-  text-decoration: underline;
+  color: var(--primary-color) !important;
+}
+
+/* Active nav link */
+.masthead .greedy-nav .visible-links a.active,
+.masthead .greedy-nav .visible-links a[aria-current="page"] {
+  color: var(--primary-color) !important;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .site-title,
 .masthead .masthead__inner-wrap .masthead__menu-item--lg a {
-  color: white !important;
+  color: var(--text-color) !important;
   font-weight: 700;
   font-size: 1.5em;
+}
+
+.site-title:hover {
+  color: var(--primary-color) !important;
 }
 
 /* Global page background */
