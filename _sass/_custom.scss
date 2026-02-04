@@ -542,7 +542,7 @@ body {
 
 /* Section Titles - consistent heading styling */
 .page__content h2,
-.archive h2 {
+.archive > h2 {
   color: var(--text-color);
   position: relative;
   padding-bottom: 10px;
@@ -550,7 +550,7 @@ body {
 }
 
 .page__content h2::after,
-.archive h2::after {
+.archive > h2::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -558,6 +558,11 @@ body {
   width: 50px;
   height: 3px;
   background: var(--primary-color);
+}
+
+/* Remove underline from publication/portfolio item titles */
+.archive__item-title::after {
+  display: none !important;
 }
 
 /* All links unified color */
