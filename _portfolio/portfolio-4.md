@@ -1,10 +1,27 @@
 ---
 title: "Gaze-based Child Reading Assistant"
-excerpt: "<img src='/images/childread.png' alt='Child reading assistant'>"
+excerpt: ""
 collection: portfolio
 layout: archive
 date: 2025-01-15
 ---
 
-In this project, we explore how AI can support young children during picture-book reading by combining real-time eye-tracking with adaptive language generation. Our system monitors a child's visual attention as they look around a storybook page and uses this information to estimate when they are engaged or losing interest. Based on their gaze patterns, the AI proactively offers short, child-friendly narrative prompts that highlight what the child is currently looking at and gently guide them toward new parts of the picture. By integrating multimodal sensing, lightweight attention modeling, and LLM-based storytelling, the project aims to create a more responsive, personalized, and engaging reading experience that supports early literacy and curiosity-driven exploration.
+<img src="/images/childread.png" alt="Child reading assistant interface" class="project-image">
 
+<p class="project-summary">
+An AI-powered reading companion that uses real-time eye-tracking to support young children during picture-book reading, adapting narrative prompts based on visual attention patterns.
+</p>
+
+<ul class="project-highlights">
+  <li>Monitors child's gaze to detect engagement and attention shifts</li>
+  <li>Generates child-friendly narrative prompts using LLMs</li>
+  <li>Guides attention toward unexplored parts of illustrations</li>
+  <li>Supports early literacy through curiosity-driven exploration</li>
+</ul>
+
+<div class="project-tags">
+  <span class="project-tag">Eye-tracking</span>
+  <span class="project-tag">Child-AI Interaction</span>
+  <span class="project-tag">LLM</span>
+  <span class="project-tag">Education</span>
+</div>

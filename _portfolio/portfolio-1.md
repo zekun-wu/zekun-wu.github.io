@@ -1,17 +1,26 @@
 ---
 title: "RelEYEance: Real-Time Gaze-Based AI Reliance Detection"
-excerpt: "<img src='/images/teaserfigure.png' alt='RelEYEance teaser'>"
+excerpt: ""
 collection: portfolio
 layout: archive
 date: 2024-05-01
 ---
 
-AI assistance in time-critical tasks, such as drone monitoring, requires users to balance swift decision-making and proper verification of AI suggestions—what we term appropriate reliance. RelEYEance is a gaze-based clustering model designed to assess user reliance on AI in real-time. This project involved two key studies:
+<img src="/images/teaserfigure.png" alt="RelEYEance system overview" class="project-image">
 
-Identifying Gaze Features: Using eye-tracking data, we identified fixation count, fixation duration, and revisits as key indicators of user reliance. We distinguished between over-reliance, under-reliance, and appropriate reliance based on these metrics.
+<p class="project-summary">
+A gaze-based clustering model that assesses user reliance on AI in real-time during time-critical tasks like drone monitoring, enabling adaptive interventions to promote appropriate AI reliance.
+</p>
 
-Real-Time Reliance Detection: Implementing an online clustering pipeline, we evaluated reliance types during task performance. Tailored interventions, such as visual and audio prompts, recalibrated reliance when over-reliance or under-reliance was detected.
+<ul class="project-highlights">
+  <li>Identified fixation count, duration, and revisits as key reliance indicators</li>
+  <li>Distinguishes over-reliance, under-reliance, and appropriate reliance patterns</li>
+  <li>Implements online clustering pipeline for real-time detection</li>
+  <li>Delivers visual and audio interventions to recalibrate user behavior</li>
+</ul>
 
-The model was validated through experiments with different AI performance levels and demonstrated effectiveness in detecting reliance deviations and guiding users towards appropriate reliance.
-
-<!-- [Read the full paper here](https://arxiv.org/abs/2405.09695) --> 
+<div class="project-tags">
+  <span class="project-tag">Eye-tracking</span>
+  <span class="project-tag">Human-AI Collaboration</span>
+  <span class="project-tag">Real-time Systems</span>
+</div>

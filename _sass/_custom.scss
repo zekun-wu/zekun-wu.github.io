@@ -313,40 +313,160 @@ body {
   margin-bottom: 10px;
 }
 
-/* Portfolio Projects Styling */
+/* Portfolio Projects Styling - Modern Case Study Layout */
 .portfolio-item {
   background: var(--card-bg);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--card-shadow);
   transition: all 0.3s ease;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
+  padding: 32px;
 }
 
 .portfolio-item:hover {
-  transform: translateY(-3px);
   box-shadow: var(--card-shadow-hover);
 }
 
+/* Portfolio title - clean dark text with accent line */
 .portfolio-item .archive__item-title {
+  background: none;
+  color: var(--text-color);
+  margin: 0 0 12px 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.portfolio-item .archive__item-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
   background: var(--primary-color);
-  color: white;
-  margin: 0;
-  padding: 20px 25px;
-  font-size: 1.3em;
 }
 
 .portfolio-item .archive__item-title a {
-  color: white !important;
+  color: var(--text-color) !important;
+  text-decoration: none;
 }
 
+.portfolio-item .archive__item-title a:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Portfolio content area */
 .portfolio-item .archive__item-excerpt {
-  padding: 25px;
-  line-height: 1.6;
+  padding: 0;
+  margin-top: 20px;
+  line-height: 1.7;
   color: var(--text-color);
 }
 
-/* Ensure excerpt images are tidy and consistent */
+/* Portfolio images - prominent display */
+.portfolio-item .archive__item-excerpt img,
+.portfolio-item .project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio summary text */
+.portfolio-item .project-summary {
+  font-size: 1.05em;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+/* Portfolio key points */
+.portfolio-item .project-highlights {
+  margin: 20px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.portfolio-item .project-highlights li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.portfolio-item .project-highlights li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Portfolio tags */
+.portfolio-item .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.portfolio-item .project-tag {
+  background: var(--primary-light);
+  color: var(--primary-color);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+/* Portfolio links */
+.portfolio-item .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--bg-color);
+}
+
+.portfolio-item .project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--primary-color);
+  color: white !important;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.portfolio-item .project-links a:hover {
+  background: #1A5BC4;
+  transform: translateY(-1px);
+}
+
+.portfolio-item .project-links a.secondary-link {
+  background: transparent;
+  color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color);
+}
+
+.portfolio-item .project-links a.secondary-link:hover {
+  background: var(--primary-light);
+}
+
+/* Ensure general excerpt images are tidy */
 .archive__item-excerpt img {
   display: block;
   width: 100%;
