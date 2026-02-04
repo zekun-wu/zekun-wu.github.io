@@ -71,52 +71,23 @@ body {
 }
 
 /* ==========================================================================
-   ABOUT PAGE - Wider content with sidebar
+   ABOUT PAGE - Keep default sidebar layout, just ensure cards fit well
    ========================================================================== */
 
-/* Expand the main container to use more screen width */
-@media (min-width: 1024px) {
-  #main {
-    max-width: 1400px !important;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  /* Make the page content area wider when sidebar is present */
-  .sidebar + .page__content,
-  .sidebar ~ .page__content {
-    max-width: none !important;
-  }
-
-  /* Expand the page wrapper */
-  .page {
-    width: 100% !important;
-    max-width: none !important;
-    float: none !important;
-    padding-right: 2em;
-  }
-
-  /* Research highlights - 2x2 grid */
+/* Research highlights - responsive grid that works with sidebar */
+@media (min-width: 768px) {
   .research-highlights {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    max-width: 100%;
-  }
-
-  /* News section full width */
-  .news-section {
-    max-width: 100%;
   }
 }
 
-@media (min-width: 1280px) {
-  #main {
-    max-width: 1600px !important;
-  }
-
+@media (max-width: 767px) {
   .research-highlights {
-    gap: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 }
 
