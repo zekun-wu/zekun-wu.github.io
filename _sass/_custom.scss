@@ -585,9 +585,10 @@ article.portfolio-item .archive__item-title {
 }
 
 /* ==========================================================================
-   PORTFOLIO DETAIL PAGE - Hero Section
+   PORTFOLIO DETAIL PAGE - Ultra-Simple Layout
    ========================================================================== */
 
+/* 1. Hero Section */
 .portfolio-hero {
   margin-bottom: 40px;
   text-align: center;
@@ -597,7 +598,7 @@ article.portfolio-item .archive__item-title {
   font-size: 2.2em !important;
   font-weight: 700 !important;
   color: var(--text-color) !important;
-  margin: 0 0 16px 0 !important;
+  margin: 0 0 12px 0 !important;
   line-height: 1.2 !important;
 }
 
@@ -611,25 +612,35 @@ article.portfolio-item .archive__item-title {
   margin-right: auto !important;
 }
 
-.portfolio-hero__tags {
+/* Links strip: Paper / Demo / Code */
+.portfolio-hero__links {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   margin-bottom: 32px;
 }
 
-.portfolio-hero__tag {
-  background: var(--primary-light) !important;
-  color: var(--primary-color) !important;
-  padding: 6px 16px !important;
-  border-radius: 20px !important;
-  font-size: 0.9em !important;
-  font-weight: 500 !important;
+.portfolio-hero__link {
+  display: inline-block;
+  padding: 8px 22px;
+  background: var(--primary-color);
+  color: #fff !important;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
 }
 
+.portfolio-hero__link:hover {
+  background: #1A5BC4;
+  transform: translateY(-1px);
+  text-decoration: none !important;
+}
+
+/* 2. Hero Image */
 .portfolio-hero__image {
-  margin-top: 24px;
+  margin-top: 8px;
 }
 
 .portfolio-hero__image img {
@@ -642,50 +653,33 @@ article.portfolio-item .archive__item-title {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* ==========================================================================
-   SINGLE PROJECT PAGE - 6 Block Structure
-   ========================================================================== */
+.portfolio-hero__caption {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: var(--text-muted);
+  font-style: italic;
+}
 
-/* Container for all content */
+/* 3. Content area - just bullet points */
 .portfolio-page-content {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Section headers */
-.portfolio-page-content h2 {
-  color: var(--text-color);
-  font-size: 1.3em;
-  font-weight: 700;
-  margin-top: 48px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid var(--primary-color);
-  display: inline-block;
-}
-
-/* Paragraphs */
-.portfolio-page-content p {
-  line-height: 1.8;
-  color: var(--text-color);
-  margin-bottom: 1.2em;
-  font-size: 1.05em;
-}
-
-/* Bullet lists */
 .portfolio-page-content ul {
   padding-left: 0;
   list-style: none;
-  margin: 20px 0;
+  margin: 24px 0;
 }
 
 .portfolio-page-content ul li {
   position: relative;
   padding-left: 28px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   line-height: 1.7;
-  font-size: 1.02em;
+  font-size: 1.05em;
+  color: var(--text-color);
 }
 
 .portfolio-page-content ul li::before {
@@ -696,146 +690,23 @@ article.portfolio-item .archive__item-title {
   font-weight: 600;
 }
 
-/* Two-column grid for Role & Tech section */
-.portfolio-page-content .two-column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin: 24px 0;
-}
-
-@media (max-width: 600px) {
-  .portfolio-page-content .two-column {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-}
-
-.portfolio-page-content .two-column h3 {
+.portfolio-page-content p {
+  line-height: 1.8;
   color: var(--text-color);
-  font-size: 1.1em;
-  font-weight: 600;
-  margin-bottom: 12px;
-  padding-bottom: 6px;
-  border-bottom: 2px solid #E5E7EB;
+  margin-bottom: 1.2em;
+  font-size: 1.05em;
 }
 
-.portfolio-page-content .two-column ul {
-  margin: 0;
-}
-
-.portfolio-page-content .two-column ul li {
-  margin-bottom: 10px;
-  font-size: 0.95em;
-}
-
-/* Image gallery for How It Works */
-.portfolio-page-content .image-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin: 24px 0;
-}
-
-.portfolio-page-content .image-gallery figure {
-  margin: 0;
-}
-
-.portfolio-page-content .image-gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-page-content .image-gallery figcaption {
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: var(--text-muted);
-  text-align: center;
-}
-
-/* Single image with caption */
-.portfolio-page-content figure {
-  margin: 24px 0;
-}
-
-.portfolio-page-content figure img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-page-content figcaption {
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: var(--text-muted);
-  text-align: center;
-  font-style: italic;
-}
-
-/* Outcome/Links section */
-.portfolio-page-content .outcome-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 20px 0;
-}
-
-.portfolio-page-content .outcome-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  background: var(--primary-color);
-  color: white !important;
-  border-radius: 6px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.portfolio-page-content .outcome-links a:hover {
-  background: #1A5BC4;
-  transform: translateY(-1px);
-}
-
-.portfolio-page-content .outcome-links a.secondary {
-  background: transparent;
-  color: var(--primary-color) !important;
-  border: 1px solid var(--primary-color);
-}
-
-.portfolio-page-content .outcome-links a.secondary:hover {
-  background: var(--primary-light);
-}
-
-/* Status badge */
-.portfolio-page-content .status-badge {
-  display: inline-block;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.9em;
-  font-weight: 500;
-  margin: 10px 0;
-}
-
-.portfolio-page-content .status-badge.ongoing {
-  background: #FEF3C7;
-  color: #92400E;
-}
-
-.portfolio-page-content .status-badge.published {
-  background: #D1FAE5;
-  color: #065F46;
-}
-
-.portfolio-page-content .status-badge.review {
-  background: var(--primary-light);
+.portfolio-page-content a {
   color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
 }
+
+.portfolio-page-content a:hover {
+  text-decoration: underline;
+}
+
 
 /* Archive items styling */
 .archive__item {

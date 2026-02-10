@@ -26,22 +26,31 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         {% if page.collection == 'portfolio' %}
-          <!-- Portfolio Hero Section -->
+          <!-- Portfolio: Ultra-Simple Layout -->
           <header class="portfolio-hero">
+            <!-- 1. Quick Summary Strip -->
             <h1 class="portfolio-hero__title">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
             {% if page.summary %}
               <p class="portfolio-hero__summary">{{ page.summary }}</p>
             {% endif %}
-            {% if page.tags %}
-              <div class="portfolio-hero__tags">
-                {% for tag in page.tags %}
-                  <span class="portfolio-hero__tag">{{ tag }}</span>
-                {% endfor %}
-              </div>
-            {% endif %}
+            <div class="portfolio-hero__links">
+              {% if page.paperurl %}
+                <a href="{{ page.paperurl }}" target="_blank" class="portfolio-hero__link">Paper</a>
+              {% endif %}
+              {% if page.demourl %}
+                <a href="{{ page.demourl }}" target="_blank" class="portfolio-hero__link">Demo</a>
+              {% endif %}
+              {% if page.codeurl %}
+                <a href="{{ page.codeurl }}" target="_blank" class="portfolio-hero__link">Code</a>
+              {% endif %}
+            </div>
+            <!-- 2. Hero Image -->
             {% if page.hero_image %}
               <div class="portfolio-hero__image">
                 <img src="{{ page.hero_image }}" alt="{{ page.title }}">
+                {% if page.hero_caption %}
+                  <p class="portfolio-hero__caption">{{ page.hero_caption }}</p>
+                {% endif %}
               </div>
             {% endif %}
           </header>
