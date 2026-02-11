@@ -475,6 +475,42 @@ article.portfolio-item .archive__item-title {
   transform: translateY(-1px);
 }
 
+/* Project links (Paper / Code buttons) */
+.portfolio-item .project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.portfolio-item .project-link-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: var(--primary-color);
+  color: white !important;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9em;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.portfolio-item .project-link-btn:hover {
+  background: #1A5BC4;
+  transform: translateY(-1px);
+}
+
+.portfolio-item .project-link-placeholder {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #E5E7EB;
+  color: #6B7280;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
 /* Legacy image support */
 .portfolio-item .archive__item-excerpt img {
   display: block !important;

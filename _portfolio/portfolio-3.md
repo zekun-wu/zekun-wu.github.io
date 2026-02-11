@@ -3,7 +3,8 @@ title: "Highlight-Informed Saliency Model (HISM)"
 summary: "Predicting how visual highlights guide user attention in interfaces"
 hero_image: "/images/Model4.drawio.png"
 hero_caption: "HISM processes visual features and temporal dynamics to predict attention distribution"
-paperurl: "https://arxiv.org/abs/2405.09695"
+paperurl: "https://ieeexplore.ieee.org/document/11197128"
+codeurl: "https://github.com/CIXUniSaarland/HISM"
 excerpt: ""
 collection: portfolio
 date: 2024-04-01

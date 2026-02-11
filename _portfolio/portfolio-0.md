@@ -6,6 +6,8 @@ hero_caption: "Participants read AI-generated comments and indicated their agree
 excerpt: ""
 collection: portfolio
 date: 2024-11-01
+paperurl: "https://arxiv.org/abs/2511.09667"
+codeurl: "https://github.com/zekun-wu/belief_change_survey"
 ---
 
 - **Problem:** Little is known about how subtle variations in AI responses influence the strength and direction of user beliefs

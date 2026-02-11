@@ -6,6 +6,8 @@ hero_caption: "Gaze patterns are analyzed in real time to detect reliance type a
 excerpt: ""
 collection: portfolio
 date: 2024-05-01
+paperurl: "https://dl.acm.org/doi/10.1145/3725841"
+codeurl: "https://github.com/zekun-wu/drone_monitor_audio"
 ---
 
 - **Problem:** Users often over-rely on or under-rely on AI suggestions in time-critical decision tasks

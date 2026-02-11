@@ -35,7 +35,9 @@
     </h2> -->
 
     <h2 class="archive__item-title" itemprop="headline">
-      {% if post.paperurl %}
+      {% if post.collection == 'portfolio' %}
+        {{ title }}
+      {% elsif post.paperurl %}
         <a href="{{ post.paperurl }}" target="_blank">{{ title }}</a>
       {% else %}
         <a href="{{ post.url }}" rel="paperurl">{{ title }}</a>
@@ -73,7 +75,18 @@
           {% endfor %}
         </div>
       {% endif %}
-      <a href="{{ post.url }}" class="project-read-more">View Project →</a>
+      <div class="project-links">
+        {% if post.underconstruction %}
+          <span class="project-link-placeholder">Under Construction</span>
+        {% else %}
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}" target="_blank" class="project-link-btn">Paper</a>
+          {% endif %}
+          {% if post.codeurl %}
+            <a href="{{ post.codeurl }}" target="_blank" class="project-link-btn">Code</a>
+          {% endif %}
+        {% endif %}
+      </div>
     </div>
     {% elsif post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
