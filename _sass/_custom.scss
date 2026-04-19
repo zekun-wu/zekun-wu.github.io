@@ -196,8 +196,8 @@ body {
 }
 
 .news-scroll {
-  max-height: 195px;
-  overflow-y: auto;
+  max-height: 230px !important;
+  overflow-y: auto !important;
   padding-right: 6px;
 
   &::-webkit-scrollbar {
