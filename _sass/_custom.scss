@@ -42,6 +42,16 @@
   color: var(--primary-color) !important;
 }
 
+/* Apps nav link - highlighted in blue */
+.masthead .greedy-nav .visible-links a[href="/apps/"] {
+  color: var(--primary-color) !important;
+  font-weight: 700 !important;
+}
+
+.masthead .greedy-nav .visible-links a[href="/apps/"]:hover {
+  color: #1A5BC4 !important;
+}
+
 /* Active nav link */
 .masthead .greedy-nav .visible-links a.active,
 .masthead .greedy-nav .visible-links a[aria-current="page"] {
