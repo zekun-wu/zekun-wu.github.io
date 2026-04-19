@@ -45,20 +45,6 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
 </div>
 
 
-## Apps
-
-<article class="portfolio-item">
-  <h2 class="archive__item-title">GazeTrac — Eye-Tracking Attention Analytics</h2>
-  <div class="archive__item-excerpt portfolio-content">
-    <img src="/images/gazetrac-preview.png" alt="GazeTrac screenshot" class="project-image">
-    <p class="project-summary">A Windows desktop application that uses real-time eye tracking to measure user attention across applications and convert gaze behavior into structured productivity insights.</p>
-    <p class="project-summary" style="font-style:italic;color:#4B5563;">Built end-to-end, including real-time gaze attribution, user-facing interface, and production deployment.</p>
-    <div class="project-links">
-      <a href="https://gazetrac.com" target="_blank" class="project-link-btn">Website</a>
-    </div>
-  </div>
-</article>
-
 ## Service
 
 Conference Reviewer: ACM ICMI 2024, ETRA 2025, CHI 2026, ETRA 2026

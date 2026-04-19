@@ -10,7 +10,10 @@ main:
 
   - title: "Projects"
     url: /portfolio/
-    
+
+  - title: "Apps"
+    url: /apps/
+
   - title: "CV"
     url: https://zekunwu.com/files/CV_Zekun_Wu.pdf
         
