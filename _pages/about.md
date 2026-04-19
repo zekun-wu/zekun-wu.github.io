@@ -28,14 +28,19 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
 
 <div class="news-section">
   <h2>🗞️ Latest News</h2>
-  <div class="news-item">
-    <strong>Jan 2026:</strong> Happy to share that Master's student Ole, whom I advised, successfully defended his thesis 🎉
-  </div>
-  <div class="news-item">
-    <strong>Sep 2025:</strong> One paper has been accepted at IEEE HMS!
-  </div>
-  <div class="news-item">
-    <strong>March 2025:</strong> Our paper has been accepted at ETRA 2025!
+  <div class="news-scroll">
+    <div class="news-item">
+      <strong>Apr 2026:</strong> Built and launched GazeTrac, a real-time system combining eye tracking with application-level attention analytics. <a href="https://gazetrac.com">Check it here</a>.
+    </div>
+    <div class="news-item">
+      <strong>Jan 2026:</strong> Happy to share that Master's student Ole, whom I advised, successfully defended his thesis 🎉
+    </div>
+    <div class="news-item">
+      <strong>Sep 2025:</strong> One paper has been accepted at IEEE HMS!
+    </div>
+    <div class="news-item">
+      <strong>March 2025:</strong> Our paper has been accepted at ETRA 2025!
+    </div>
   </div>
 </div>
 
