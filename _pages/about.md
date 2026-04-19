@@ -28,7 +28,7 @@ I'm a Ph.D. student working at the [Computational Interaction Lab](https://cix.c
 
 <div class="news-section">
   <h2>🗞️ Latest News</h2>
-  <div class="news-scroll">
+  <div class="news-scroll" style="max-height:230px;overflow-y:auto;padding-right:6px;">
     <div class="news-item">
       <strong>Apr 2026:</strong> Built and launched GazeTrac, a real-time system combining eye tracking with application-level attention analytics. <a href="https://gazetrac.com">Check it here</a>.
     </div>
