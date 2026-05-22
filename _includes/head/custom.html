@@ -317,23 +317,39 @@ button:not(#zw-owl) { display: none !important; }
   border-top: 1px dashed oklch(0.76 0.12 85 / 0.2);
 }
 .zw-article > * + * { margin-top: 1.25rem; }
-.zw-a-prefix { color: oklch(0.76 0.12 85 / 0.5); font-size: 11px; text-transform: uppercase; letter-spacing: 0.3em; }
-.zw-a-title  { color: var(--gold-light); font-size: 15px; font-weight: 400; margin: 0 !important; }
+.zw-article > p { margin-bottom: 0; } /* reset browser default on link/website paragraphs */
+
+/* margin:0 resets browser default <p> margins; space-y-1 = 0.25rem gap before title */
+.zw-a-prefix { color: oklch(0.76 0.12 85 / 0.5); font-size: 11px; text-transform: uppercase; letter-spacing: 0.3em; margin: 0; }
+.zw-a-title  { color: var(--gold-light); font-size: 15px; font-weight: 400; margin: 0.25rem 0 0 !important; }
+
+/* margin-top: 0.5rem matches Tailwind mt-2 that overrides space-y-5 on the figure */
 .zw-a-figure {
-  margin: 0;
+  margin: 0.5rem 0 0;
   border: 1px solid oklch(0.76 0.12 85 / 0.15);
   background: oklch(0.205 0 0 / 0.5);
 }
+:root.light .zw-a-figure {
+  border-color: oklch(0.55 0.13 60 / 0.15);
+  background: oklch(0.93 0.008 85 / 0.5);
+}
+
+/* pb-2 (0.5rem) for single-line projects; apps adds .zw-a-cap-apps for pb-3 */
 .zw-a-cap {
   color: oklch(0.96 0 0 / 0.9);
-  padding: 0.75rem 1rem 0.75rem;
+  padding: 0.75rem 1rem 0.5rem;
   border-bottom: 1px dashed oklch(0.76 0.12 85 / 0.15);
+}
+.zw-a-cap-apps { padding-bottom: 0.75rem; }
+:root.light .zw-a-cap {
+  color: oklch(0.22 0 0 / 0.9);
+  border-bottom-color: oklch(0.55 0.13 60 / 0.15);
 }
 .zw-a-cap > p { margin: 0 0 0.75rem; }
 .zw-a-cap > p:last-child { margin-bottom: 0; }
 .zw-a-img-wrap { padding: 0.75rem; }
 .zw-a-img { width: 100%; display: block; }
-.zw-a-links { font-size: 12.5px; }
+.zw-a-links { font-size: 12.5px; margin-bottom: 0; }
 .zw-a-link {
   color: oklch(0.76 0.12 85 / 0.8);
   text-decoration: underline;
@@ -342,7 +358,20 @@ button:not(#zw-owl) { display: none !important; }
   margin-right: 1rem;
 }
 .zw-a-link:hover { color: var(--gold-light) !important; }
+:root.light .zw-a-link { color: oklch(0.55 0.13 60 / 0.8); }
+/* Website link: gold-light by default, darkens to gold on hover (inverted from Paper/Code) */
+.zw-a-link-site {
+  color: var(--gold-light);
+  text-decoration: underline;
+  text-decoration-color: oklch(0.76 0.12 85 / 0.4);
+  text-underline-offset: 2px;
+}
+.zw-a-link-site:hover { color: var(--gold) !important; }
+:root.light .zw-a-link-site { text-decoration-color: oklch(0.55 0.13 60 / 0.4); }
 .zw-a-status { color: oklch(0.76 0.12 85 / 0.6); font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; }
+:root.light .zw-a-status { color: oklch(0.55 0.13 60 / 0.6); }
+:root.light .zw-article { border-top-color: oklch(0.55 0.13 60 / 0.2); }
+:root.light .zw-a-prefix { color: oklch(0.55 0.13 60 / 0.5); }
 
 /* --- Page title (Publications / Projects / Apps) --- */
 .zw-page-title {
