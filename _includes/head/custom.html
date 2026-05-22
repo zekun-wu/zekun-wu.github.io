@@ -29,34 +29,293 @@
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<!-- Custom fonts — applied globally to all pages -->
+<!-- Custom fonts + dark mono theme (Your Digital Story reference) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
 <style>
-body {
-  font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+/* =============================================
+   DARK MONO THEME — Your Digital Story ref
+   ============================================= */
+
+:root {
+  --bg:         #0d0d0d;
+  --surface:    #1a1a1a;
+  --text:       #f0f0f0;
+  --muted:      #888888;
+  --gold:       #c8a84b;
+  --gold-light: #f0d78c;
+  --gold-dim:   rgba(200, 168, 75, 0.7);
+  --gold-dash:  rgba(200, 168, 75, 0.22);
+}
+
+/* --- Base --- */
+html, body {
+  background: var(--bg) !important;
+  color: var(--text);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13.5px;
+  line-height: 1.75;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
-/* Hide the Follow toggle button; keep social links always expanded */
-.author__urls-wrapper > button {
-  display: none !important;
+a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: rgba(200, 168, 75, 0.35);
+  text-underline-offset: 3px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+a:hover {
+  color: var(--gold-light) !important;
+  text-decoration-color: rgba(240, 215, 140, 0.5) !important;
 }
 
-.author__urls-wrapper .author__urls {
-  display: block !important;
+/* --- CRT scanlines --- */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    transparent 2px,
+    rgba(255, 255, 255, 0.012) 2px,
+    rgba(255, 255, 255, 0.012) 3px
+  );
 }
 
-/* Suppress greedy-nav overflow dropdown — prevents the popup box
-   that appears when nav links overflow into a hidden list */
+/* --- CRT vignette --- */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 50%, transparent 58%, rgba(0,0,0,0.38) 100%);
+}
+
+/* --- Masthead --- */
+.masthead {
+  background: var(--bg) !important;
+  border-bottom: 1px dashed var(--gold-dash) !important;
+  box-shadow: none !important;
+}
+.greedy-nav {
+  background: transparent !important;
+}
+.greedy-nav > button .navicon,
+.greedy-nav > button .navicon::before,
+.greedy-nav > button .navicon::after {
+  background: var(--muted) !important;
+  border-color: var(--muted) !important;
+}
+.masthead__menu-item--lg a {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: var(--gold) !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  text-decoration: none !important;
+}
+.greedy-nav .visible-links a {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: var(--muted) !important;
+  text-transform: lowercase !important;
+  letter-spacing: 0 !important;
+  text-decoration: none !important;
+}
+.greedy-nav .visible-links a:hover {
+  color: var(--gold) !important;
+  text-decoration: none !important;
+}
+.masthead__menu-item--apps a {
+  color: var(--gold-dim) !important;
+}
 .greedy-nav .hidden-links {
   display: none !important;
 }
+
+/* --- Sidebar / main content backgrounds --- */
+.sidebar, #main, .page,
+.page__inner-wrap, .page__content,
+.initial-content, .archive {
+  background: transparent !important;
+}
+
+/* --- Author sidebar --- */
+.author__avatar img {
+  filter: grayscale(100%) contrast(1.1) !important;
+  border-radius: 0 !important;
+  border: none !important;
+  outline: 1px solid rgba(200, 168, 75, 0.2) !important;
+  outline-offset: -1px !important;
+  box-shadow: none !important;
+}
+.author__name {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: var(--gold-light) !important;
+  letter-spacing: 0 !important;
+}
+.author__tagline {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 11.5px !important;
+  color: var(--muted) !important;
+  line-height: 1.75 !important;
+}
+.author__urls-wrapper > button {
+  display: none !important;
+}
+.author__urls-wrapper .author__urls {
+  display: block !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.author__urls li a,
+.author__desktop {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 12px !important;
+  color: var(--muted) !important;
+  text-decoration: none !important;
+}
+.author__urls li a:hover {
+  color: var(--gold) !important;
+}
+
+/* --- Page content --- */
+.page__content {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--text);
+}
+.page__title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+/* --- Homepage: section header --- */
+.zw-head {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px !important;
+  font-weight: 500 !important;
+  color: var(--muted) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.25em !important;
+  margin: 1.75rem 0 0.6rem !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+/* --- 2-column grid rows --- */
+.zw-table {
+  margin-bottom: 0.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed var(--gold-dash);
+}
+.zw-table:last-child {
+  border-bottom: none;
+}
+.zw-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 0.15rem 1.25rem;
+  padding: 0.25rem 0;
+}
+@media (max-width: 600px) {
+  .zw-row { grid-template-columns: 1fr; gap: 0; }
+}
+.zw-key  { font-size: 12.5px; color: var(--gold);     line-height: 1.75; }
+.zw-date { font-size: 12px;   color: var(--gold-dim);  line-height: 1.75; }
+.zw-val  { font-size: 13.5px; color: var(--muted);     line-height: 1.75; }
+.zw-val a { color: var(--gold); text-decoration-style: dashed; }
+
+/* Intro paragraph */
+.zw-intro {
+  color: var(--text);
+  font-size: 13.5px;
+  line-height: 1.75;
+  margin-bottom: 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed var(--gold-dash);
+}
+.zw-intro a { color: var(--gold); }
+
+/* Blinking caret */
+.zw-caret {
+  display: inline-block;
+  width: 8px;
+  height: 13px;
+  background: var(--gold);
+  vertical-align: text-bottom;
+  margin-left: 3px;
+  animation: zw-blink 1s step-end infinite;
+}
+@keyframes zw-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* --- Archive pages (Publications, Apps, Projects) --- */
+.archive__subtitle {
+  font-family: 'IBM Plex Mono', monospace !important;
+  color: var(--gold) !important;
+  border-bottom-color: var(--gold-dash) !important;
+  font-size: 11.5px !important;
+  letter-spacing: 0.2em !important;
+}
+.archive__item-title {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 13.5px !important;
+}
+.archive__item-title a {
+  color: var(--gold-light) !important;
+  text-decoration: none !important;
+}
+.archive__item-title a:hover {
+  color: var(--gold) !important;
+}
+.archive__item-excerpt,
+.archive__item-excerpt p {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 13.5px !important;
+  color: var(--muted) !important;
+}
+.archive__item-excerpt a,
+.archive__item-excerpt p a {
+  color: var(--gold) !important;
+}
+
+/* --- Footer --- */
+.page__footer {
+  background: var(--bg) !important;
+  border-top: 1px dashed var(--gold-dash) !important;
+  color: var(--muted) !important;
+}
+.page__footer p, .page__footer a,
+.page__footer-follow li {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 11.5px !important;
+  color: var(--muted) !important;
+}
+.page__footer a:hover { color: var(--gold) !important; }
 </style>
 
 <!-- end custom head snippets -->
