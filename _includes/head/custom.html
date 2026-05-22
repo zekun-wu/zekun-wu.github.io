@@ -324,9 +324,16 @@ button:not(#zw-owl) { display: none !important; }
 
 /* margin-top: 0.5rem matches Tailwind mt-2 that overrides space-y-5 on the figure */
 .zw-a-figure {
+  display: block;           /* override theme figure { display: flex } */
   margin: 0.5rem 0 0;
   border: 1px solid oklch(0.76 0.12 85 / 0.15);
   background: oklch(0.205 0 0 / 0.5);
+}
+.zw-a-img {
+  width: 100%; display: block;
+  border-radius: 0;         /* override theme figure img { border-radius: 4px } */
+  margin-bottom: 0;         /* override theme figure img { margin-bottom: 1em } */
+  transition: none;         /* override theme img { transition: all 0.2s } */
 }
 :root.light .zw-a-figure {
   background: #ffffff;
@@ -343,16 +350,17 @@ button:not(#zw-owl) { display: none !important; }
   font-family: 'IBM Plex Mono', monospace;
   font-style: normal;
   margin: 0;
+  background: oklch(0.17 0.008 85 / 0.7);
 }
 .zw-a-cap-apps { padding-bottom: 0.75rem; }
 :root.light .zw-a-cap {
   color: oklch(0.22 0 0 / 0.9);
   border-bottom-color: oklch(0.72 0.1 72 / 0.3);
+  background: oklch(0.94 0.018 85);
 }
 .zw-a-cap > p { margin: 0 0 0.75rem; }
 .zw-a-cap > p:last-child { margin-bottom: 0; }
-.zw-a-img-wrap { padding: 0.75rem; }
-.zw-a-img { width: 100%; display: block; }
+.zw-a-img-wrap { padding: 0; }
 .zw-a-links { font-size: 12.5px; margin-bottom: 0; }
 .zw-a-link {
   color: oklch(0.76 0.12 85 / 0.8);
