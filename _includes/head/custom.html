@@ -88,13 +88,11 @@ html, body {
   background: var(--background) !important;
   color: var(--foreground);
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 13.5px;
-  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   padding: 0 !important;
   margin: 0;
 }
-h1,h2,h3,h4,h5,h6 { font-family: 'IBM Plex Mono', monospace; }
+h1,h2,h3,h4,h5,h6 { font-family: 'IBM Plex Mono', monospace; line-height: inherit; }
 a { color: var(--gold); transition: color 0.15s; }
 a:hover { color: var(--gold-light) !important; }
 ::selection { background: oklch(0.76 0.12 85 / 0.3); color: var(--gold-light); }
@@ -110,7 +108,8 @@ button:not(#zw-owl) { display: none !important; }
 }
 
 /* --- Page wrapper (matches crt + container) --- */
-.zw-page { min-height: 100vh; }
+/* font-size here, NOT on html, so 1rem stays 16px for all rem spacing calculations */
+.zw-page { min-height: 100vh; font-size: 13.5px; line-height: 1.75; }
 .zw-wrap {
   max-width: 768px;
   margin: 0 auto;
