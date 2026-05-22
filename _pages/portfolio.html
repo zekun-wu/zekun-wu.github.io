@@ -1,16 +1,108 @@
 ---
-layout: archive
-title: "Projects"
+title: Projects
 permalink: /portfolio/
+layout: default
 author_profile: false
-classes: wide
 ---
 
-{% include base_path %}
+<div class="zw-page">
+  <div class="zw-wrap">
 
+    <header class="zw-page-hd">
+      <p>
+        <a href="/" class="zw-h-name">Zekun Wu</a><span class="zw-h-sub"> — PhD student, Saarland University</span>
+      </p>
+      <nav class="zw-nav">
+        <a href="/">about</a>
+        <a href="/publications/">publications</a>
+        <a href="/portfolio/" class="zw-active">projects</a>
+        <a href="/apps/">apps</a>
+      </nav>
+    </header>
 
-{% assign sorted_portfolio = site.portfolio | sort: 'date' | reverse %}
-{% for post in sorted_portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+    <section class="zw-page-intro">
+      <h1 class="zw-page-title">Projects</h1>
+    </section>
 
+    <article class="zw-article">
+      <header>
+        <p class="zw-a-prefix">/proj/01</p>
+        <h2 class="zw-a-title">Gaze-based Child Reading Assistant</h2>
+      </header>
+      <figure class="zw-a-figure">
+        <figcaption class="zw-a-cap">
+          <p>An adaptive AI reading companion using real-time eye-tracking.</p>
+        </figcaption>
+        <div class="zw-a-img-wrap">
+          <img src="https://zekunwu.com/images/childread.png" alt="Gaze-based Child Reading Assistant" loading="lazy" class="zw-a-img">
+        </div>
+      </figure>
+      <p class="zw-a-links">
+        <span class="zw-a-status">[Under Construction]</span>
+      </p>
+    </article>
+
+    <article class="zw-article">
+      <header>
+        <p class="zw-a-prefix">/proj/02</p>
+        <h2 class="zw-a-title">Examining AI Prompt Design for Influencing User Beliefs</h2>
+      </header>
+      <figure class="zw-a-figure">
+        <figcaption class="zw-a-cap">
+          <p>How AI response detail and confidence shape human judgment.</p>
+        </figcaption>
+        <div class="zw-a-img-wrap">
+          <img src="https://zekunwu.com/images/2_2_disagree.png" alt="Examining AI Prompt Design for Influencing User Beliefs" loading="lazy" class="zw-a-img">
+        </div>
+      </figure>
+      <p class="zw-a-links">
+        <a href="https://arxiv.org/abs/2511.09667" target="_blank" rel="noreferrer" class="zw-a-link">[Paper]</a>
+        <a href="https://github.com/zekun-wu/belief_change_survey" target="_blank" rel="noreferrer" class="zw-a-link">[Code]</a>
+      </p>
+    </article>
+
+    <article class="zw-article">
+      <header>
+        <p class="zw-a-prefix">/proj/03</p>
+        <h2 class="zw-a-title">RelEYEance: Real-Time Gaze-Based AI Reliance Detection</h2>
+      </header>
+      <figure class="zw-a-figure">
+        <figcaption class="zw-a-cap">
+          <p>Detecting and calibrating user reliance on AI through eye-tracking.</p>
+        </figcaption>
+        <div class="zw-a-img-wrap">
+          <img src="https://zekunwu.com/images/teaserfigure.png" alt="RelEYEance: Real-Time Gaze-Based AI Reliance Detection" loading="lazy" class="zw-a-img">
+        </div>
+      </figure>
+      <p class="zw-a-links">
+        <a href="https://dl.acm.org/doi/10.1145/3725841" target="_blank" rel="noreferrer" class="zw-a-link">[Paper]</a>
+        <a href="https://github.com/zekun-wu/drone_monitor_audio" target="_blank" rel="noreferrer" class="zw-a-link">[Code]</a>
+      </p>
+    </article>
+
+    <article class="zw-article">
+      <header>
+        <p class="zw-a-prefix">/proj/04</p>
+        <h2 class="zw-a-title">Highlight-Informed Saliency Model (HISM)</h2>
+      </header>
+      <figure class="zw-a-figure">
+        <figcaption class="zw-a-cap">
+          <p>Predicting how visual highlights guide user attention in interfaces.</p>
+        </figcaption>
+        <div class="zw-a-img-wrap">
+          <img src="https://zekunwu.com/images/Model4.drawio.png" alt="Highlight-Informed Saliency Model (HISM)" loading="lazy" class="zw-a-img">
+        </div>
+      </figure>
+      <p class="zw-a-links">
+        <a href="https://ieeexplore.ieee.org/document/11197128" target="_blank" rel="noreferrer" class="zw-a-link">[Paper]</a>
+        <a href="https://github.com/CIXUniSaarland/HISM" target="_blank" rel="noreferrer" class="zw-a-link">[Code]</a>
+      </p>
+    </article>
+
+    <footer class="zw-footer">
+      <p>© 2026 Zekun Wu · Saarbrücken, Germany</p>
+      <p>Last updated · May 2026</p>
+    </footer>
+
+  </div>
+</div>

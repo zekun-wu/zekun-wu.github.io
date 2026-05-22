@@ -1,34 +1,152 @@
 ---
-layout: archive
-title: "Publications"
+title: Publications
 permalink: /publications/
+layout: default
 author_profile: false
-classes: wide
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<div class="zw-page">
+  <div class="zw-wrap">
 
-{% include base_path %}
+    <header class="zw-page-hd">
+      <p>
+        <a href="/" class="zw-h-name">Zekun Wu</a><span class="zw-h-sub"> — PhD student, Saarland University</span>
+      </p>
+      <nav class="zw-nav">
+        <a href="/">about</a>
+        <a href="/publications/" class="zw-active">publications</a>
+        <a href="/portfolio/">projects</a>
+        <a href="/apps/">apps</a>
+      </nav>
+    </header>
 
-<!-- List publications by year -->
-{% assign current_year = "" %}
-{% for post in site.publications reversed %}
-  {% assign post_year = post.date | default: "1900-01-01" | date: "%Y" %}
-  {% if post_year != current_year %}
-    {% unless current_year == "" %}
-      </div>
-    {% endunless %}
-    <h2>{{ post_year }}</h2><hr />
-    <div class="publications-year">
-    {% assign current_year = post_year %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
-{% unless current_year == "" %}
+    <section class="zw-page-intro">
+      <h1 class="zw-page-title">Publications</h1>
+      <p>You can also find my articles on <a href="https://scholar.google.com/citations?user=VTpw1JwAAAAJ&hl=en">my Google Scholar profile</a>.</p>
+    </section>
+
+    <!-- 2025 -->
+    <section class="zw-pub-section">
+      <h2 class="zw-pub-year">2025</h2>
+      <ul class="zw-pub-list">
+        <li class="g12">
+          <span class="zw-p-tag">[2025]</span>
+          <div class="zw-p-body">
+            <a href="https://arxiv.org/abs/2511.09667" target="_blank" rel="noreferrer" class="zw-p-link">Beyond Persuasion: How AI Response Features Shape User Belief Strength and Stance</a>
+          </div>
+        </li>
+        <li class="g12">
+          <span class="zw-p-tag">[2025]</span>
+          <div class="zw-p-body">
+            <a href="https://dl.acm.org/doi/10.1145/3725841" target="_blank" rel="noreferrer" class="zw-p-link">RelEYEance: Gaze-based assessment of users' AI-reliance at run-time</a>
+            <p class="zw-p-venue">ACM Symposium on Eye Tracking Research and Application (ETRA 2025)</p>
+          </div>
+        </li>
+        <li class="g12">
+          <span class="zw-p-tag">[2025]</span>
+          <div class="zw-p-body">
+            <a href="https://arxiv.org/abs/2510.08777" target="_blank" rel="noreferrer" class="zw-p-link">Understanding and Predicting Temporal Visual Attention Influenced by Dynamic Highlights in Monitoring Task</a>
+            <p class="zw-p-venue">IEEE Transactions on Human-Machine Systems</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 2024 -->
+    <section class="zw-pub-section">
+      <h2 class="zw-pub-year">2024</h2>
+      <ul class="zw-pub-list">
+        <li class="g12">
+          <span class="zw-p-tag">[2024]</span>
+          <div class="zw-p-body">
+            <a href="https://arxiv.org/abs/2404.14232" target="_blank" rel="noreferrer" class="zw-p-link">Shifting Focus with HCEye: Exploring the Dynamics of Visual Highlighting and Cognitive Load on User Attention and Saliency Prediction</a>
+            <p class="zw-p-venue">ACM Symposium on Eye Tracking Research and Application (ETRA 2024)</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 2022 -->
+    <section class="zw-pub-section">
+      <h2 class="zw-pub-year">2022</h2>
+      <ul class="zw-pub-list">
+        <li class="g12">
+          <span class="zw-p-tag">[2022]</span>
+          <div class="zw-p-body">
+            <a href="https://ieeexplore.ieee.org/document/9757602" target="_blank" rel="noreferrer" class="zw-p-link">A Study of Real-time Information and Immersive Maps on User Behaviors during Search and Rescue (SAR) Training of Firefighters</a>
+            <p class="zw-p-venue">IEEE VR 2022 Workshop on 3D Content Creation for Simulation Training (TrainingXR)</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 2020 -->
+    <section class="zw-pub-section">
+      <h2 class="zw-pub-year">2020</h2>
+      <ul class="zw-pub-list">
+        <li class="g12">
+          <span class="zw-p-tag">[2020]</span>
+          <div class="zw-p-body">
+            <a href="https://ieeexplore.ieee.org/document/9171291" target="_blank" rel="noreferrer" class="zw-p-link">A Human-Centered Risk Model for Construction Safety</a>
+            <p class="zw-p-venue">IEEE Access</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 2019 -->
+    <section class="zw-pub-section">
+      <h2 class="zw-pub-year">2019</h2>
+      <ul class="zw-pub-list">
+        <li class="g12">
+          <span class="zw-p-tag">[2019]</span>
+          <div class="zw-p-body">
+            <a href="https://doi.org/10.1002/qre.2453" target="_blank" rel="noreferrer" class="zw-p-link">The Task Demands-Resources Method: A New Approach to Human Reliability Analysis from a Psychological Perspective</a>
+            <p class="zw-p-venue">Quality and Reliability Engineering International</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 2018 -->
+    <section class="zw-pub-section">
+      <h2 class="zw-pub-year">2018</h2>
+      <ul class="zw-pub-list">
+        <li class="g12">
+          <span class="zw-p-tag">[2018]</span>
+          <div class="zw-p-body">
+            <a href="https://doi.org/10.1080/10803548.2018.1498655" target="_blank" rel="noreferrer" class="zw-p-link">Performance Shaping Factors in Human Error Probability Modification of Human Reliability Analysis</a>
+            <p class="zw-p-venue">International Journal of Occupational Safety and Ergonomics</p>
+          </div>
+        </li>
+        <li class="g12">
+          <span class="zw-p-tag">[2018]</span>
+          <div class="zw-p-body">
+            <a href="https://ieeexplore.ieee.org/abstract/document/8287518" target="_blank" rel="noreferrer" class="zw-p-link">Relation of Motivation Intensity, Stress Level, and Human Performance: A Human Reliability Experiment</a>
+            <p class="zw-p-venue">Proceedings of the 11th Asian Control Conference (ASCC 2017)</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 2017 -->
+    <section class="zw-pub-section">
+      <h2 class="zw-pub-year">2017</h2>
+      <ul class="zw-pub-list">
+        <li class="g12">
+          <span class="zw-p-tag">[2017]</span>
+          <div class="zw-p-body">
+            <a href="https://ieeexplore.ieee.org/document/8030722" target="_blank" rel="noreferrer" class="zw-p-link">Influence of Work Motivation and Task Difficulty on Human Reliability</a>
+            <p class="zw-p-venue">Proceedings of the 2nd International Conference on Reliability Systems Engineering (ICRSE 2017), Beijing, 2017</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="zw-footer">
+      <p>© 2026 Zekun Wu · Saarbrücken, Germany</p>
+      <p>Last updated · May 2026</p>
+    </footer>
+
   </div>
-{% endunless %}
-
-
-
+</div>
