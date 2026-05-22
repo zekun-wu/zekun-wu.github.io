@@ -21,6 +21,7 @@ redirect_from:
         <a href="/portfolio/">projects</a>
         <a href="/apps/">apps</a>
         <a href="#service">service</a>
+        <a href="https://zekunwu.com/files/CV_Zekun_Wu.pdf" target="_blank" rel="noreferrer">cv</a>
       </nav>
       <button class="zw-owl" id="zw-owl" onclick="zwToggle()" aria-label="toggle theme"></button>
     </header>

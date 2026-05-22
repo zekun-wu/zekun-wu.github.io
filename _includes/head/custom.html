@@ -101,6 +101,7 @@ a:hover { color: var(--gold-light) !important; }
 
 /* --- Hide Jekyll chrome --- */
 .masthead, .page__footer, .sidebar { display: none !important; }
+button:not(#zw-owl) { display: none !important; }
 #main, .page, .page__inner-wrap, .page__content {
   float: none !important; width: 100% !important;
   max-width: none !important;
@@ -187,6 +188,7 @@ a:hover { color: var(--gold-light) !important; }
 .zw-portrait {
   width: 100%; max-width: 200px; aspect-ratio: 4/5;
   object-fit: cover;
+  position: relative; z-index: 51;
 }
 .zw-bio { color: oklch(0.96 0 0 / 0.9); }
 .zw-bio a {
@@ -325,7 +327,7 @@ a:hover { color: var(--gold-light) !important; }
   padding: 0.75rem 1rem 0.75rem;
   border-bottom: 1px dashed oklch(0.76 0.12 85 / 0.15);
 }
-.zw-a-cap > p { margin-bottom: 0.75rem; }
+.zw-a-cap > p { margin: 0 0 0.75rem; }
 .zw-a-cap > p:last-child { margin-bottom: 0; }
 .zw-a-img-wrap { padding: 0.75rem; }
 .zw-a-img { width: 100%; display: block; }
