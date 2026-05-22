@@ -111,7 +111,7 @@ a:hover { color: var(--gold-light) !important; }
 /* --- Page wrapper (matches crt + container) --- */
 .zw-page { min-height: 100vh; }
 .zw-wrap {
-  max-width: 48rem;
+  max-width: 768px;
   margin: 0 auto;
   padding: 2.5rem 1.25rem;
 }
@@ -186,10 +186,7 @@ a:hover { color: var(--gold-light) !important; }
 }
 .zw-portrait {
   width: 100%; max-width: 200px; aspect-ratio: 4/5;
-  object-fit: cover; background: var(--surface);
-  outline: 1px solid oklch(0.76 0.12 85 / 0.2);
-  outline-offset: -1px;
-  /* color photo — no grayscale */
+  object-fit: cover;
 }
 .zw-bio { color: oklch(0.96 0 0 / 0.9); }
 .zw-bio a {
