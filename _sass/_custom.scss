@@ -1,3 +1,10 @@
+/* Remove focus outline on click */
+* { -webkit-tap-highlight-color: transparent; }
+*:focus, *:focus-visible, *:focus-within {
+  outline: 0 !important;
+  outline-width: 0 !important;
+}
+
 /* Custom Variables for Personalization */
 :root {
   --primary-color: #2F80ED;      /* Clean modern blue */
