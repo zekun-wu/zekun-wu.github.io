@@ -42,7 +42,7 @@ redirect_from:
         <li><span class="zw-lk">scholar</span> <a href="https://scholar.google.com/citations?user=VTpw1JwAAAAJ&hl=en">Google Scholar</a></li>
         <li><span class="zw-lk">orcid</span> <a href="https://orcid.org/0000-0002-5233-2352">ORCID</a></li>
         <li><span class="zw-lk">github</span> <a href="#">GitHub</a></li>
-        <li><span class="zw-lk">linkedin</span> <a href="#">LinkedIn</a></li>
+        <li><span class="zw-lk">linkedin</span> <a href="https://www.linkedin.com/in/wuzekun">LinkedIn</a></li>
       </ul>
     </section>
 
