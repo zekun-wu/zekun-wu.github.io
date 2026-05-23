@@ -83,6 +83,9 @@ body::after {
 :root.light body::before,
 :root.light body::after { display: none; }
 
+/* --- Remove focus outline on click --- */
+*, *:focus, *:focus-visible { outline: none !important; }
+
 /* --- Base --- */
 html, body {
   background: var(--background) !important;
