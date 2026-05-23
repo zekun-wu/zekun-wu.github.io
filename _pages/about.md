@@ -30,7 +30,7 @@ redirect_from:
     <section id="about" class="zw-about">
       <div class="zw-portrait-grid">
         <div>
-          <img src="/images/Zekun%20Wu.jpg" alt="Portrait of Zekun Wu" class="zw-portrait" id="zw-portrait" data-src-dark="/images/Zekun%20Wu.jpg" data-src-light="/images/Zekun%20Wu%28light%29.png">
+          <img src="/images/Zekun%20Wu.jpg" alt="Portrait of Zekun Wu" class="zw-portrait" id="zw-portrait" data-src-dark="/images/Zekun%20Wu.jpg" data-src-light="/images/zekun-wu-light.png">
         </div>
         <div class="zw-bio">
           <p>I'm a Ph.D. student working at the <a href="https://cix.cs.uni-saarland.de/">Computational Interaction Lab</a>, Saarland University, Germany. My research focuses on analyzing and predicting user fixations during interactions with interfaces. I also have prior research experience in human reliability analysis and data visualization.</p>
@@ -38,7 +38,7 @@ redirect_from:
       </div>
 
       <ul class="zw-links">
-        <li><span class="zw-lk">email</span> <a href="mailto:zekun.wu@uni-saarland.de">zekun.wu@uni-saarland.de</a></li>
+        <li><span class="zw-lk">email</span> <a href="mailto:wu_zekun@outlook.com">wu_zekun@outlook.com</a></li>
         <li><span class="zw-lk">scholar</span> <a href="https://scholar.google.com/citations?user=VTpw1JwAAAAJ&hl=en">Google Scholar</a></li>
         <li><span class="zw-lk">orcid</span> <a href="#">ORCID</a></li>
         <li><span class="zw-lk">github</span> <a href="#">GitHub</a></li>
