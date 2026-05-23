@@ -33,7 +33,7 @@ redirect_from:
           <img src="/images/Zekun%20Wu.jpg" alt="Portrait of Zekun Wu" class="zw-portrait" id="zw-portrait" data-src-dark="/images/Zekun%20Wu.jpg" data-src-light="/images/zekun-wu-light.png">
         </div>
         <div class="zw-bio">
-          <p>I'm a Ph.D. student working at the <a href="https://cix.cs.uni-saarland.de/">Computational Interaction Lab</a>, Saarland University, Germany. My research focues on studying eye-tracking in human-AI interaction system. I also have prior research experience in human reliability analysis and data visualization.</p>
+          <p>I'm a Ph.D. student working at the <a href="https://cix.cs.uni-saarland.de/">Computational Interaction Lab</a>, Saarland University, Germany. My research focuses on studying eye-tracking in human-AI interaction system. I also have prior research experience in human reliability analysis and data visualization.</p>
         </div>
       </div>
 
