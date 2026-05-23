@@ -196,8 +196,16 @@ button:not(#zw-owl) { display: none !important; }
   transition: none !important;
   box-shadow: none !important;
 }
+/* portrait frame + grain-smoothing in light mode */
+.zw-portrait-frame {
+  display: inline-block; line-height: 0;
+}
+:root.light .zw-portrait-frame {
+  border: 2.5px solid oklch(0.28 0.05 60);
+  box-shadow: 0 3px 10px oklch(0.28 0.05 60 / 0.25);
+}
 :root.light .zw-portrait {
-  box-shadow: 0 2px 8px oklch(0.55 0.13 60 / 0.12), 0 6px 20px oklch(0.55 0.13 60 / 0.10) !important;
+  filter: blur(0.35px) !important;
 }
 .zw-bio { color: oklch(0.96 0 0 / 0.9); }
 .zw-bio a {
