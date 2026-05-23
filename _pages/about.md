@@ -40,7 +40,7 @@ redirect_from:
       <ul class="zw-links">
         <li><span class="zw-lk">email</span> <a href="mailto:wu_zekun@outlook.com">wu_zekun@outlook.com</a></li>
         <li><span class="zw-lk">scholar</span> <a href="https://scholar.google.com/citations?user=VTpw1JwAAAAJ&hl=en">Google Scholar</a></li>
-        <li><span class="zw-lk">orcid</span> <a href="#">ORCID</a></li>
+        <li><span class="zw-lk">orcid</span> <a href="https://orcid.org/0000-0002-5233-2352">ORCID</a></li>
         <li><span class="zw-lk">github</span> <a href="#">GitHub</a></li>
         <li><span class="zw-lk">linkedin</span> <a href="#">LinkedIn</a></li>
       </ul>
