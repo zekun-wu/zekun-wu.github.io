@@ -30,7 +30,7 @@ redirect_from:
     <section id="about" class="zw-about">
       <div class="zw-portrait-grid">
         <div>
-          <img src="/images/Zekun%20Wu.jpg" alt="Portrait of Zekun Wu" class="zw-portrait">
+          <img src="/images/Zekun%20Wu.jpg" alt="Portrait of Zekun Wu" class="zw-portrait" id="zw-portrait" data-src-dark="/images/Zekun%20Wu.jpg" data-src-light="/images/Zekun%20Wu(light).png">
         </div>
         <div class="zw-bio">
           <p>I'm a Ph.D. student working at the <a href="https://cix.cs.uni-saarland.de/">Computational Interaction Lab</a>, Saarland University, Germany. My research focuses on analyzing and predicting user fixations during interactions with interfaces. I also have prior research experience in human reliability analysis and data visualization.</p>

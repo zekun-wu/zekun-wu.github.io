@@ -421,17 +421,26 @@ button:not(#zw-owl) { display: none !important; }
       '<span class="zw-owl-lbl">' + (light ? '// day' : '// night') + '</span>';
   }
 
+  function updatePortrait() {
+    var p = document.getElementById('zw-portrait');
+    if (!p) return;
+    var light = document.documentElement.classList.contains('light');
+    p.src = light ? p.dataset.srcLight : p.dataset.srcDark;
+  }
+
   window.zwToggle = function () {
     var light = document.documentElement.classList.contains('light');
     document.documentElement.classList.toggle('light', !light);
     localStorage.setItem('zw-theme', light ? 'dark' : 'light');
     renderOwl();
+    updatePortrait();
   };
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderOwl);
+    document.addEventListener('DOMContentLoaded', function () { renderOwl(); updatePortrait(); });
   } else {
     renderOwl();
+    updatePortrait();
   }
 })();
 </script>
