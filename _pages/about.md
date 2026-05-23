@@ -29,7 +29,7 @@ redirect_from:
     <!-- About -->
     <section id="about" class="zw-about">
       <div class="zw-portrait-grid">
-        <div class="zw-portrait-frame">
+        <div>
           <img src="/images/Zekun%20Wu.jpg" alt="Portrait of Zekun Wu" class="zw-portrait">
         </div>
         <div class="zw-bio">
