@@ -33,7 +33,10 @@ redirect_from:
           <img src="/images/Zekun%20Wu.jpg" alt="Portrait of Zekun Wu" class="zw-portrait" id="zw-portrait" data-src-dark="/images/Zekun%20Wu.jpg" data-src-light="/images/zekun-wu-light.png">
         </div>
         <div class="zw-bio">
-          <p>I'm a Ph.D. student working at the <a href="https://cix.cs.uni-saarland.de/">Computational Interaction Lab</a>, Saarland University, Germany. My research spans two areas: user modeling with gaze behavior, investigating how gaze can help AI systems understand users' attention, intentions, and reliance during interaction; and human–AI collaboration for workflow automation, studying how humans and AI agents can turn complex tasks into reliable and reusable automated workflows. I also have prior research experience in human reliability analysis and data visualization.</p>
+          <p>I'm a Ph.D. student working at the <a href="https://cix.cs.uni-saarland.de/">Computational Interaction Lab</a>, Saarland University, Germany. My research spans two areas:</p>
+          <p><strong>User modeling with gaze behavior.</strong> I investigate how gaze behavior can help AI systems understand users' attention, intentions, and reliance during interaction.</p>
+          <p><strong>Human–AI collaboration for workflow automation.</strong> I study how humans and AI agents can collaborate to turn complex tasks into reliable and reusable automated workflows.</p>
+          <p>I also have prior research experience in human reliability analysis and data visualization.</p>
         </div>
       </div>
 
