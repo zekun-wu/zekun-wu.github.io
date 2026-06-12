@@ -33,7 +33,7 @@ redirect_from:
           <img src="/images/Zekun%20Wu.jpg" alt="Portrait of Zekun Wu" class="zw-portrait" id="zw-portrait" data-src-dark="/images/Zekun%20Wu.jpg" data-src-light="/images/zekun-wu-light.png">
         </div>
         <div class="zw-bio">
-          <p>I'm a Ph.D. student working at the <a href="https://cix.cs.uni-saarland.de/">Computational Interaction Lab</a>, Saarland University, Germany. My research focuses on studying eye-tracking in human-AI interaction system. I also have prior research experience in human reliability analysis and data visualization.</p>
+          <p>I'm a Ph.D. student working at the <a href="https://cix.cs.uni-saarland.de/">Computational Interaction Lab</a>, Saarland University, Germany. My research spans two areas: user modeling with gaze behavior, investigating how gaze can help AI systems understand users' attention, intentions, and reliance during interaction; and human–AI collaboration for workflow automation, studying how humans and AI agents can turn complex tasks into reliable and reusable automated workflows. I also have prior research experience in human reliability analysis and data visualization.</p>
         </div>
       </div>
 
@@ -43,25 +43,6 @@ redirect_from:
         <li><span class="zw-lk">orcid</span> <a href="https://orcid.org/0000-0002-5233-2352">ORCID</a></li>
         <li><span class="zw-lk">github</span> <a href="https://github.com/zekun-wu">GitHub</a></li>
         <li><span class="zw-lk">linkedin</span> <a href="https://www.linkedin.com/in/wuzekun">LinkedIn</a></li>
-      </ul>
-    </section>
-
-    <!-- Research -->
-    <section id="research" class="zw-section">
-      <h2 class="zw-section-title">Research</h2>
-      <ul class="zw-r-list">
-        <li class="g12">
-          <span class="zw-r-label">Eye-tracking</span>
-          <span class="zw-r-body">Analyzing visual attention patterns and gaze behavior to understand how users interact with digital interfaces and AI systems.</span>
-        </li>
-        <li class="g12">
-          <span class="zw-r-label">Human-AI Collaboration</span>
-          <span class="zw-r-body">Investigating how humans can effectively collaborate with AI systems, focusing on trust, reliance, and decision-making processes.</span>
-        </li>
-        <li class="g12">
-          <span class="zw-r-label">Human Reliability Analysis</span>
-          <span class="zw-r-body">Studying human performance and reliability in complex systems to improve safety and efficiency in human-machine interactions.</span>
-        </li>
       </ul>
     </section>
 
