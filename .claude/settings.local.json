@@ -3,7 +3,23 @@
     "allow": [
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Skill(commit-commands:commit-push-pr)",
+      "Bash(git checkout *)",
+      "Bash(winget list *)",
+      "Bash(git merge *)",
+      "Bash(git push *)",
+      "Bash(git branch *)",
+      "Bash(git *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\wuzek\\\\OneDrive\\\\Desktop\\\\Your Digital Story\" -Recurse -File)",
+      "Bash(Select-Object FullName)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\wuzek\\\\OneDrive\\\\Desktop\\\\Your Digital Story\" -Directory)",
+      "Bash(Select-Object Name)",
+      "PowerShell(head *)",
+      "Bash(node -e \"const fs=require\\('fs'\\); const c=fs.readFileSync\\('assets/js/main.min.js','utf8'\\); const m=c.match\\(/greedy[^;]{0,300}/g\\); if\\(m\\) m.slice\\(0,5\\).forEach\\(x=>console.log\\(x\\)\\)\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const c=fs.readFileSync\\('assets/js/main.min.js','utf8'\\); const m=c.match\\(/author__urls|scroll-top|back-to-top|btn-top|navicon/g\\); console.log\\(m\\)\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const c=fs.readFileSync\\('assets/js/main.min.js','utf8'\\); console.log\\(c.substring\\(0,3000\\)\\)\")",
+      "Bash(python *)"
     ]
   }
 }
