@@ -7,6 +7,7 @@ excerpt: ""
 collection: portfolio
 date: 2026-09-01
 paperurl: "https://arxiv.org/abs/2609.13136"
+demourl: "https://youtu.be/zU-Z9TJfOhA"
 codeurl: "https://github.com/zekun-wu/trace2flow"
 ---
 

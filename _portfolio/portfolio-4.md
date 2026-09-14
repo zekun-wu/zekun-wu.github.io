@@ -7,6 +7,7 @@ excerpt: ""
 collection: portfolio
 date: 2025-01-15
 paperurl: "https://arxiv.org/abs/2607.00445"
+demourl: "https://youtu.be/XaCXO5DcNrQ"
 ---
 
 - **Problem:** Young children need engaging, adaptive guidance during picture-book reading to develop literacy skills
