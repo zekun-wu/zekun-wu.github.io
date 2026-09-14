@@ -6,6 +6,7 @@ hero_caption: "An agent's execution trace is translated into an editable workflo
 excerpt: ""
 collection: portfolio
 date: 2026-09-01
+paperurl: "https://arxiv.org/abs/2609.13136"
 codeurl: "https://github.com/zekun-wu/trace2flow"
 ---
 

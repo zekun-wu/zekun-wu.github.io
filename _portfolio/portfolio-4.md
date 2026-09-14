@@ -6,7 +6,7 @@ hero_caption: "The system tracks where a child looks on the page and generates c
 excerpt: ""
 collection: portfolio
 date: 2025-01-15
-underconstruction: true
+paperurl: "https://arxiv.org/abs/2607.00445"
 ---
 
 - **Problem:** Young children need engaging, adaptive guidance during picture-book reading to develop literacy skills
