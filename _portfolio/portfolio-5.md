@@ -14,4 +14,4 @@ codeurl: "https://github.com/zekun-wu/trace2flow"
 - **What we built:** Trace2Flow, a research probe that translates an agent's completed execution trace into an editable, executable workflow graph, informed by an analysis of 10,803 n8n workflow templates and two formative surveys
 - **How it works:** Each step of the agent's ReAct trace becomes a node with its intermediate outputs, so users can inspect the logic, cross-check evidence, and adapt the workflow for a related task instead of re-prompting
 - **Key finding:** In a study with 20 AI-agent users, post-task workflows improved understanding and error detection over a prompt-only condition; for follow-up tasks, adapting the workflow matched adapting the prompt in success, time, and difficulty, and was often preferred
-- **Status:** Under review (CHI 2027)
+- **Status:** Under Construction
