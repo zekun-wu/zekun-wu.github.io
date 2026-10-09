@@ -5,118 +5,115 @@ layout: default
 author_profile: false
 ---
 
-<div class="zw-page">
-  <div class="zw-wrap">
+<div class="sw">
 
-    <header class="zw-page-hd">
-      <p>
-        <a href="/" class="zw-h-name">Zekun Wu</a><span class="zw-h-sub"> — PhD student, Saarland University</span>
-      </p>
-      <nav class="zw-nav">
-        <a href="/">about</a>
-        <a href="/publications/">publications</a>
-        <a href="/portfolio/" class="zw-active">projects</a>
-        <a href="/apps/">apps</a>
-        <a href="https://zekunwu.com/files/CV_Zekun_Wu.pdf" target="_blank" rel="noreferrer">cv</a>
-      </nav>
-    </header>
+{% include sw-masthead.html active="projects" %}
 
-    <section class="zw-page-intro">
-      <h1 class="zw-page-title">Projects</h1>
-    </section>
+  <section class="sw-grid sw-pagehead">
+    <h1>Projects</h1>
+    <p>Five systems and studies, 2024 – 2026. Each with paper, code, or demo where available.</p>
+  </section>
 
-    <article class="zw-article">
-      <header>
-        <p class="zw-a-prefix">/proj/01</p>
-        <h2 class="zw-a-title">Trace2Flow: From Review to Reuse — Post-Task Workflows for Human–AI Agent Interaction</h2>
-      </header>
-      <figure class="zw-a-figure">
-        <figcaption class="zw-a-cap">Turning a completed AI-agent execution into an editable workflow graph users can inspect, validate, and reuse.</figcaption>
-        <div class="zw-a-img-wrap">
-          <img src="https://zekunwu.com/images/trace2flow-teaser.png" alt="Trace2Flow: an agent's execution trace is translated into an editable workflow graph for inspection and reuse" loading="lazy" class="zw-a-img">
-        </div>
-      </figure>
-      <p class="zw-a-links">
-        <span class="zw-a-status">[Under Construction]</span>
-        <a href="https://arxiv.org/abs/2609.13136" target="_blank" rel="noreferrer" class="zw-a-link">[Paper]</a>
-        <a href="https://youtu.be/zU-Z9TJfOhA" target="_blank" rel="noreferrer" class="zw-a-link">[Demo]</a>
-        <a href="https://github.com/zekun-wu/trace2flow" target="_blank" rel="noreferrer" class="zw-a-link">[Code]</a>
-      </p>
-    </article>
-
-    <article class="zw-article">
-      <header>
-        <p class="zw-a-prefix">/proj/02</p>
-        <h2 class="zw-a-title">Gaze-based Child Reading Assistant</h2>
-      </header>
-      <figure class="zw-a-figure">
-        <figcaption class="zw-a-cap">An adaptive AI reading companion using real-time eye-tracking.</figcaption>
-        <div class="zw-a-img-wrap">
-          <img src="https://zekunwu.com/images/childread.png" alt="Gaze-based Child Reading Assistant" loading="lazy" class="zw-a-img">
-        </div>
-      </figure>
-      <p class="zw-a-links">
-        <span class="zw-a-status">[Under Construction]</span>
-        <a href="https://arxiv.org/abs/2607.00445" target="_blank" rel="noreferrer" class="zw-a-link">[Paper]</a>
-        <a href="https://youtu.be/XaCXO5DcNrQ" target="_blank" rel="noreferrer" class="zw-a-link">[Demo]</a>
-      </p>
-    </article>
-
-    <article class="zw-article">
-      <header>
-        <p class="zw-a-prefix">/proj/03</p>
-        <h2 class="zw-a-title">Examining AI Prompt Design for Influencing User Beliefs</h2>
-      </header>
-      <figure class="zw-a-figure">
-        <figcaption class="zw-a-cap">How AI response detail and confidence shape human judgment.</figcaption>
-        <div class="zw-a-img-wrap">
-          <img src="https://zekunwu.com/images/2_2_disagree.png" alt="Examining AI Prompt Design for Influencing User Beliefs" loading="lazy" class="zw-a-img">
-        </div>
-      </figure>
-      <p class="zw-a-links">
-        <a href="https://arxiv.org/abs/2511.09667" target="_blank" rel="noreferrer" class="zw-a-link">[Paper]</a>
-        <a href="https://github.com/zekun-wu/belief_change_survey" target="_blank" rel="noreferrer" class="zw-a-link">[Code]</a>
-      </p>
-    </article>
-
-    <article class="zw-article">
-      <header>
-        <p class="zw-a-prefix">/proj/04</p>
-        <h2 class="zw-a-title">RelEYEance: Real-Time Gaze-Based AI Reliance Detection</h2>
-      </header>
-      <figure class="zw-a-figure">
-        <figcaption class="zw-a-cap">Detecting and calibrating user reliance on AI through eye-tracking.</figcaption>
-        <div class="zw-a-img-wrap">
-          <img src="https://zekunwu.com/images/teaserfigure.png" alt="RelEYEance: Real-Time Gaze-Based AI Reliance Detection" loading="lazy" class="zw-a-img">
-        </div>
-      </figure>
-      <p class="zw-a-links">
-        <a href="https://dl.acm.org/doi/10.1145/3725841" target="_blank" rel="noreferrer" class="zw-a-link">[Paper]</a>
-        <a href="https://github.com/zekun-wu/drone_monitor_audio" target="_blank" rel="noreferrer" class="zw-a-link">[Code]</a>
-      </p>
-    </article>
-
-    <article class="zw-article">
-      <header>
-        <p class="zw-a-prefix">/proj/05</p>
-        <h2 class="zw-a-title">Highlight-Informed Saliency Model (HISM)</h2>
-      </header>
-      <figure class="zw-a-figure">
-        <figcaption class="zw-a-cap">Predicting how visual highlights guide user attention in interfaces.</figcaption>
-        <div class="zw-a-img-wrap">
-          <img src="https://zekunwu.com/images/Model4.drawio.png" alt="Highlight-Informed Saliency Model (HISM)" loading="lazy" class="zw-a-img">
-        </div>
-      </figure>
-      <p class="zw-a-links">
-        <a href="https://ieeexplore.ieee.org/document/11197128" target="_blank" rel="noreferrer" class="zw-a-link">[Paper]</a>
-        <a href="https://github.com/CIXUniSaarland/HISM" target="_blank" rel="noreferrer" class="zw-a-link">[Code]</a>
-      </p>
-    </article>
-
-    <footer class="zw-footer">
-      <p>© 2026 Zekun Wu · Saarbrücken, Germany</p>
-      <p>Last updated · May 2026</p>
-    </footer>
-
+  <div id="list" class="sw-grid sw-colheads" aria-hidden="true">
+    <span>No.</span>
+    <span>Project</span>
+    <span>Figure</span>
   </div>
+
+  <!-- 01 -->
+  <article class="sw-grid sw-proj">
+    <p class="sw-proj-no">01</p>
+    <div class="sw-proj-body">
+      <p class="sw-kicker">System · Under construction</p>
+      <h2>Trace2Flow: From Review to Reuse</h2>
+      <p class="sw-proj-desc">Turning a completed AI-agent execution into an editable workflow graph users can inspect, validate, and reuse.</p>
+      <div class="sw-btns">
+        <a href="https://arxiv.org/abs/2609.13136" target="_blank" rel="noreferrer" class="sw-btn">Paper</a>
+        <a href="https://youtu.be/zU-Z9TJfOhA" target="_blank" rel="noreferrer" class="sw-btn">Demo</a>
+        <a href="https://github.com/zekun-wu/trace2flow" target="_blank" rel="noreferrer" class="sw-btn">Code</a>
+      </div>
+    </div>
+    <figure class="sw-fig">
+      <div class="sw-plate"><img src="/images/trace2flow-teaser.png" alt="Trace2Flow: an agent's execution trace is translated into an editable workflow graph for inspection and reuse" loading="lazy"></div>
+      <figcaption>Fig. 01 — Trace to workflow graph</figcaption>
+    </figure>
+  </article>
+
+  <!-- 02 -->
+  <article class="sw-grid sw-proj">
+    <p class="sw-proj-no">02</p>
+    <div class="sw-proj-body">
+      <p class="sw-kicker">System · Under construction</p>
+      <h2>Gaze-based Child Reading Assistant</h2>
+      <p class="sw-proj-desc">An adaptive AI reading companion using real-time eye-tracking.</p>
+      <div class="sw-btns">
+        <a href="https://arxiv.org/abs/2607.00445" target="_blank" rel="noreferrer" class="sw-btn">Paper</a>
+        <a href="https://youtu.be/XaCXO5DcNrQ" target="_blank" rel="noreferrer" class="sw-btn">Demo</a>
+      </div>
+    </div>
+    <figure class="sw-fig">
+      <div class="sw-plate"><img src="/images/childread.png" alt="Gaze-based child reading assistant interface" loading="lazy"></div>
+      <figcaption>Fig. 02 — Reading companion</figcaption>
+    </figure>
+  </article>
+
+  <!-- 03 -->
+  <article class="sw-grid sw-proj">
+    <p class="sw-proj-no">03</p>
+    <div class="sw-proj-body">
+      <p class="sw-kicker">Study · HAXD 2026</p>
+      <h2>AI Prompt Design for Influencing User Beliefs</h2>
+      <p class="sw-proj-desc">How AI response detail and confidence shape human judgment.</p>
+      <div class="sw-btns">
+        <a href="https://arxiv.org/abs/2511.09667" target="_blank" rel="noreferrer" class="sw-btn">Paper</a>
+        <a href="https://github.com/zekun-wu/belief_change_survey" target="_blank" rel="noreferrer" class="sw-btn">Code</a>
+      </div>
+    </div>
+    <figure class="sw-fig">
+      <div class="sw-plate"><img src="/images/2_2_disagree.png" alt="Survey interface for the belief-change study" loading="lazy"></div>
+      <figcaption>Fig. 03 — Study interface</figcaption>
+    </figure>
+  </article>
+
+  <!-- 04 -->
+  <article class="sw-grid sw-proj">
+    <p class="sw-proj-no">04</p>
+    <div class="sw-proj-body">
+      <p class="sw-kicker">System · ETRA 2025</p>
+      <h2>RelEYEance: Real-Time Gaze-Based AI Reliance Detection</h2>
+      <p class="sw-proj-desc">Detecting and calibrating user reliance on AI through eye-tracking.</p>
+      <div class="sw-btns">
+        <a href="https://dl.acm.org/doi/10.1145/3725841" target="_blank" rel="noreferrer" class="sw-btn">Paper</a>
+        <a href="https://github.com/zekun-wu/drone_monitor_audio" target="_blank" rel="noreferrer" class="sw-btn">Code</a>
+      </div>
+    </div>
+    <figure class="sw-fig">
+      <div class="sw-plate"><img src="/images/teaserfigure.png" alt="RelEYEance teaser figure" loading="lazy"></div>
+      <figcaption>Fig. 04 — Reliance pipeline</figcaption>
+    </figure>
+  </article>
+
+  <!-- 05 -->
+  <article class="sw-grid sw-proj sw-proj--end">
+    <p class="sw-proj-no">05</p>
+    <div class="sw-proj-body">
+      <p class="sw-kicker">Model · IEEE Trans. Human-Machine Systems</p>
+      <h2>Highlight-Informed Saliency Model (HISM)</h2>
+      <p class="sw-proj-desc">Predicting how visual highlights guide user attention in interfaces.</p>
+      <div class="sw-btns">
+        <a href="https://ieeexplore.ieee.org/document/11197128" target="_blank" rel="noreferrer" class="sw-btn">Paper</a>
+        <a href="https://github.com/CIXUniSaarland/HISM" target="_blank" rel="noreferrer" class="sw-btn">Code</a>
+      </div>
+    </div>
+    <figure class="sw-fig">
+      <div class="sw-plate"><img src="/images/Model4.drawio.png" alt="HISM model architecture" loading="lazy"></div>
+      <figcaption>Fig. 05 — Model architecture</figcaption>
+    </figure>
+  </article>
+
+  <footer class="sw-foot">
+    <span>© 2026 Zekun Wu · Saarbrücken</span>
+    <span>Updated 2026 · 10</span>
+  </footer>
+
 </div>

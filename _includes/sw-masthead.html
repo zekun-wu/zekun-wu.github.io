@@ -1,0 +1,11 @@
+<header class="sw-grid sw-mast">
+  <a href="/" class="sw-mast-name">Zekun Wu</a>
+  <p class="sw-mast-role">PhD Student<br>Saarland University</p>
+  <nav class="sw-nav" aria-label="Main">
+    <a href="/#about"{% if include.active == "about" %} class="is-active"{% endif %}>About</a>
+    <a href="/publications/"{% if include.active == "publications" %} class="is-active" aria-current="page"{% endif %}>Publications</a>
+    <a href="/portfolio/"{% if include.active == "projects" %} class="is-active" aria-current="page"{% endif %}>Projects</a>
+    <a href="/apps/"{% if include.active == "apps" %} class="is-active" aria-current="page"{% endif %}>Apps</a>
+    <a href="https://zekunwu.com/files/CV_Zekun_Wu.pdf" target="_blank" rel="noreferrer">CV ↗</a>
+  </nav>
+</header>

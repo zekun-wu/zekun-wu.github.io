@@ -5,51 +5,39 @@ layout: default
 author_profile: false
 ---
 
-<div class="zw-page">
-  <div class="zw-wrap">
+<div class="sw">
 
-    <header class="zw-page-hd">
-      <p>
-        <a href="/" class="zw-h-name">Zekun Wu</a><span class="zw-h-sub"> — PhD student, Saarland University</span>
-      </p>
-      <nav class="zw-nav">
-        <a href="/">about</a>
-        <a href="/publications/">publications</a>
-        <a href="/portfolio/">projects</a>
-        <a href="/apps/" class="zw-active">apps</a>
-        <a href="https://zekunwu.com/files/CV_Zekun_Wu.pdf" target="_blank" rel="noreferrer">cv</a>
-      </nav>
-    </header>
+{% include sw-masthead.html active="apps" %}
 
-    <section class="zw-page-intro">
-      <h1 class="zw-page-title">Apps</h1>
-    </section>
+  <section class="sw-grid sw-pagehead">
+    <h1>Apps</h1>
+    <p>Software I have built and shipped, end to end.</p>
+  </section>
 
-    <article class="zw-article">
-      <header>
-        <p class="zw-a-prefix">/app/01</p>
-        <h2 class="zw-a-title">GazeTrac — Eye-Tracking Attention Analytics</h2>
-      </header>
+  <article id="list" class="sw-grid sw-proj sw-proj--end sw-app">
+    <p class="sw-proj-no">01</p>
+    <div class="sw-proj-body">
+      <h2>GazeTrac</h2>
+      <p class="sw-app-tag">Eye-tracking attention analytics for Windows.</p>
+      <p class="sw-proj-desc">A Windows desktop application that uses real-time eye tracking to measure user attention across applications and convert gaze behavior into structured productivity insights.</p>
+      <p class="sw-proj-desc">Built end-to-end, including real-time gaze attribution, user-facing interface, and production deployment.</p>
+      <a href="https://gazetrac.com/" target="_blank" rel="noreferrer" class="sw-btn sw-btn--solid">gazetrac.com ↗</a>
+    </div>
+    <figure class="sw-fig sw-app-shot">
+      <img src="/images/gazetrac-preview.png" alt="GazeTrac application screenshot" loading="lazy">
+      <figcaption>Fig. 1 — Attention dashboard, April 2026 release</figcaption>
+    </figure>
+    <dl class="sw-specs">
+      <div><dt>Platform</dt><dd>Windows desktop</dd></div>
+      <div><dt>Input</dt><dd>Real-time eye tracking</dd></div>
+      <div><dt>Output</dt><dd>Application-level attention analytics</dd></div>
+      <div><dt>Status</dt><dd>Launched 2026</dd></div>
+    </dl>
+  </article>
 
-      <figure class="zw-a-figure">
-        <figcaption class="zw-a-cap zw-a-cap-apps">
-          <p>A Windows desktop application that uses real-time eye tracking to measure user attention across applications and convert gaze behavior into structured productivity insights.</p>
-          <p>Built end-to-end, including real-time gaze attribution, user-facing interface, and production deployment.</p>
-        </figcaption>
-        <div class="zw-a-img-wrap">
-          <img src="https://zekunwu.com/images/gazetrac-preview.png" alt="GazeTrac screenshot" loading="lazy" class="zw-a-img">
-        </div>
-      </figure>
+  <footer class="sw-foot">
+    <span>© 2026 Zekun Wu · Saarbrücken</span>
+    <span>Updated 2026 · 10</span>
+  </footer>
 
-      <p>
-        <a href="https://gazetrac.com/" target="_blank" rel="noreferrer" class="zw-a-link-site">Website →</a>
-      </p>
-    </article>
-
-    <footer class="zw-footer">
-      <p>© 2026 Zekun Wu · Saarbrücken, Germany</p>
-      <p>Last updated · May 2026</p>
-    </footer>
-
-  </div>
 </div>
