@@ -7,25 +7,31 @@ author_profile: false
 
 <div class="sw">
 
-{% include sw-masthead.html active="apps" %}
+{% include sw-masthead.html active="apps" section="Software" meta="1 shipped app · 2026" %}
 
   <section class="sw-grid sw-pagehead">
+    <p class="sw-label sw-red sw-pagehead-label">04<br>— Software</p>
     <h1>Apps</h1>
     <p>Software I have built and shipped, end to end.</p>
   </section>
 
   <article id="list" class="sw-grid sw-proj sw-proj--end sw-app">
-    <p class="sw-proj-no">01</p>
+    <p class="sw-proj-code">A-01</p>
     <div class="sw-proj-body">
+      <p class="sw-kicker">Desktop app · Thread A</p>
       <h2>GazeTrac</h2>
       <p class="sw-app-tag">Eye-tracking attention analytics for Windows.</p>
       <p class="sw-proj-desc">A Windows desktop application that uses real-time eye tracking to measure user attention across applications and convert gaze behavior into structured productivity insights.</p>
       <p class="sw-proj-desc">Built end-to-end, including real-time gaze attribution, user-facing interface, and production deployment.</p>
+      <span class="sw-stamp">Live · Launched 04.2026</span>
       <a href="https://gazetrac.com/" target="_blank" rel="noreferrer" class="sw-btn sw-btn--solid">gazetrac.com ↗</a>
     </div>
-    <figure class="sw-fig sw-app-shot">
-      <img src="/images/gazetrac-preview.png" alt="GazeTrac application screenshot" loading="lazy">
-      <figcaption>Fig. 1 — Attention dashboard, April 2026 release</figcaption>
+    <figure class="sw-fig">
+      <div class="sw-frame">
+        <img src="/images/gazetrac-preview.png" alt="GazeTrac application screenshot" loading="lazy">
+        <i class="sw-crop sw-crop--tl" aria-hidden="true"></i><i class="sw-crop sw-crop--tr" aria-hidden="true"></i><i class="sw-crop sw-crop--bl" aria-hidden="true"></i><i class="sw-crop sw-crop--br" aria-hidden="true"></i>
+      </div>
+      <figcaption><span>Fig. 01 — Attention dashboard</span><span>1296 × 1034 px</span></figcaption>
     </figure>
     <dl class="sw-specs">
       <div><dt>Platform</dt><dd>Windows desktop</dd></div>
@@ -35,9 +41,6 @@ author_profile: false
     </dl>
   </article>
 
-  <footer class="sw-foot">
-    <span>© 2026 Zekun Wu · Saarbrücken</span>
-    <span>Updated 2026 · 10</span>
-  </footer>
+{% include sw-footer.html %}
 
 </div>

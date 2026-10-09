@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="sw">
 
-{% include sw-masthead.html active="about" %}
+{% include sw-masthead.html active="about" section="Research" meta="Gaze · Attention · AI" %}
 
   <!-- 01 Research -->
   <section id="top" class="sw-grid sw-sec sw-hero">
@@ -57,7 +57,7 @@ redirect_from:
   </section>
 
   <!-- 04 Service -->
-  <section id="service" class="sw-grid sw-sec sw-sec--end">
+  <section id="service" class="sw-grid sw-sec">
     <p class="sw-label sw-sec-label">04 — Service</p>
     <div class="sw-service-a">
       <p class="sw-label sw-mute">Conference reviewer</p>
@@ -70,7 +70,7 @@ redirect_from:
   </section>
 
   <!-- 05 Contact -->
-  <footer id="contact" class="sw-grid sw-contact">
+  <section id="contact" class="sw-grid sw-sec sw-sec--end">
     <p class="sw-label sw-sec-label">05 — Contact</p>
     <ul class="sw-contact-list">
       <li><a href="mailto:wu_zekun@outlook.com" class="sw-u1">wu_zekun@outlook.com</a></li>
@@ -79,7 +79,8 @@ redirect_from:
       <li><a href="https://orcid.org/0000-0002-5233-2352" class="sw-u1">ORCID</a></li>
       <li><a href="https://www.linkedin.com/in/wuzekun" class="sw-u1">LinkedIn</a></li>
     </ul>
-    <p class="sw-contact-meta">© 2026 Zekun Wu<br>Saarbrücken, Germany<br>Updated 2026 · 10</p>
-  </footer>
+  </section>
+
+{% include sw-footer.html %}
 
 </div>
