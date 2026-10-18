@@ -9,13 +9,13 @@ redirect_from:
 
 <div class="sw">
 
-{% include sw-masthead.html active="about" section="Research" meta="Gaze · Attention · AI" %}
+{% include sw-masthead.html active="about" section="Research" meta="Human–AI Interaction · Human Oversight · Attention" %}
 
   <!-- 01 Research -->
   <section id="top" class="sw-grid sw-sec sw-hero">
     <p class="sw-label sw-red sw-sec-label">01 — Research</p>
-    <h1>Designing human–AI systems with eye-tracking.</h1>
-    <p class="sw-hero-lede">Gaze as a signal for what people attend to, intend, and rely on — and workflows that let humans and AI agents build on each other's work.</p>
+    <h1>Human oversight of AI.</h1>
+    <p class="sw-hero-lede">How do people stay in control of AI they depend on? I design interfaces that make AI agents' behavior legible and steerable, and build systems that sense when people are attending, trusting, or losing track.</p>
   </section>
 
   <!-- 02 About -->
@@ -26,19 +26,19 @@ redirect_from:
       <p class="sw-portrait-cap">Saarbrücken, Germany</p>
     </div>
     <div class="sw-bio">
-      <p>I'm a Ph.D. student at the <a href="https://cix.cs.uni-saarland.de/" class="sw-u">Computational Interaction Lab</a>, Saarland University, Germany. My research spans two areas.</p>
+      <p>I'm a Ph.D. student at the <a href="https://cix.cs.uni-saarland.de/" class="sw-u">Computational Interaction Lab</a>, Saarland University, Germany. My research centers on <strong>human oversight of AI</strong>, in two threads.</p>
       <div class="sw-thread">
         <span class="sw-thread-key">A</span>
         <div>
-          <p class="sw-thread-title">User modeling with gaze behavior</p>
-          <p class="sw-thread-body">How gaze behavior can help AI systems understand users' attention, intentions, and reliance during interaction.</p>
+          <p class="sw-thread-title">Overseeing AI agents</p>
+          <p class="sw-thread-body">Interfaces that let people anticipate, review, and steer what an agent does — previewing its next actions before they happen, and turning its execution traces into workflows a person can inspect, correct, and reuse.</p>
         </div>
       </div>
       <div class="sw-thread">
         <span class="sw-thread-key">B</span>
         <div>
-          <p class="sw-thread-title">Human–AI collaboration for workflow automation</p>
-          <p class="sw-thread-body">How humans and AI agents can collaborate to turn complex tasks into reliable, reusable automated workflows.</p>
+          <p class="sw-thread-title">Sensing attention and reliance on AI</p>
+          <p class="sw-thread-body">Gaze and behavioral signals as a real-time measurement layer for oversight: detecting what people attend to, when they over- or under-rely on AI support, and when assistance should step in.</p>
         </div>
       </div>
       <p class="sw-bio-note">I also have prior research experience in human reliability analysis and data visualization.</p>
