@@ -16,6 +16,20 @@ redirect_from:
     <p class="sw-label sw-red sw-sec-label">01 — Research</p>
     <h1>Human–AI interaction.</h1>
     <p class="sw-hero-lede">How do people stay in control of AI they depend on? I design interfaces that make AI agents' behavior legible and steerable, and build systems that sense when people are attending, trusting, or losing track.</p>
+    <aside class="sw-rail" aria-label="Research threads">
+      <p class="sw-label sw-mute">Two threads</p>
+      <a href="#about" class="sw-rail-item">
+        <i class="sw-rail-sq sw-rail-sq--a" aria-hidden="true"></i>
+        <span class="sw-rail-key">A</span>
+        <span class="sw-rail-txt">Overseeing AI agents<small>Preview · review · steer</small></span>
+      </a>
+      <a href="#about" class="sw-rail-item">
+        <i class="sw-rail-sq sw-rail-sq--b" aria-hidden="true"></i>
+        <span class="sw-rail-key">B</span>
+        <span class="sw-rail-txt">Sensing attention &amp; reliance<small>Gaze · behavior · timing</small></span>
+      </a>
+      <p class="sw-rail-foot">↓ 02 — About</p>
+    </aside>
   </section>
 
   <!-- 02 About -->
