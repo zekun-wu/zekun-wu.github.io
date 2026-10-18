@@ -9,12 +9,12 @@ redirect_from:
 
 <div class="sw">
 
-{% include sw-masthead.html active="about" section="Research" meta="Human–AI Interaction · Human Oversight · Attention" %}
+{% include sw-masthead.html active="about" section="Research" meta="Human–AI Interaction · AI Agents · Attention" %}
 
   <!-- 01 Research -->
   <section id="top" class="sw-grid sw-sec sw-hero">
     <p class="sw-label sw-red sw-sec-label">01 — Research</p>
-    <h1>Human oversight of AI.</h1>
+    <h1>Human–AI interaction.</h1>
     <p class="sw-hero-lede">How do people stay in control of AI they depend on? I design interfaces that make AI agents' behavior legible and steerable, and build systems that sense when people are attending, trusting, or losing track.</p>
   </section>
 
@@ -26,7 +26,7 @@ redirect_from:
       <p class="sw-portrait-cap">Saarbrücken, Germany</p>
     </div>
     <div class="sw-bio">
-      <p>I'm a Ph.D. student at the <a href="https://cix.cs.uni-saarland.de/" class="sw-u">Computational Interaction Lab</a>, Saarland University, Germany. My research centers on <strong>human oversight of AI</strong>, in two threads.</p>
+      <p>I'm a Ph.D. student at the <a href="https://cix.cs.uni-saarland.de/" class="sw-u">Computational Interaction Lab</a>, Saarland University, Germany. My research centers on <strong>human–AI interaction</strong>, in two threads.</p>
       <div class="sw-thread">
         <span class="sw-thread-key">A</span>
         <div>
