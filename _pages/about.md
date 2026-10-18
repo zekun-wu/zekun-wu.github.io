@@ -14,8 +14,9 @@ redirect_from:
   <!-- 01 Research -->
   <section id="top" class="sw-grid sw-sec sw-hero">
     <p class="sw-label sw-red sw-sec-label">01 — Research</p>
-    <h1>Human–AI interaction.</h1>
-    <p class="sw-hero-lede">How do people stay in control of AI they depend on? I work on this question in two threads: interfaces that make AI agents' behavior legible and steerable, and systems that sense when people are attending, trusting, or losing track.</p>
+    <h1>Human–AI Interaction.</h1>
+    <p class="sw-deck">Keeping people in control of the AI they depend on.</p>
+    <p class="sw-hero-lede">I approach this from two sides: the agent’s, by making what it is about to do visible and steerable; and the person’s, by sensing where their attention goes and when their reliance drifts.</p>
     <aside class="sw-fork" aria-label="Two research threads">
       <p class="sw-fork-head"><i class="sw-fork-root" aria-hidden="true"></i><span class="sw-label sw-mute">Two threads</span></p>
       <ol class="sw-fork-list">
@@ -83,5 +84,17 @@ redirect_from:
   </section>
 
 {% include sw-footer.html %}
+
+<script>
+(function () {
+  var hero = document.querySelector('.sw-hero');
+  if (!hero) return;
+  function grow() { hero.classList.add('is-grown'); }
+  if (!window.matchMedia('(hover: hover)').matches) { grow(); return; }
+  hero.addEventListener('mouseenter', grow, { once: true });
+  hero.addEventListener('focusin', grow, { once: true });
+  window.setTimeout(grow, 4000);
+})();
+</script>
 
 </div>
