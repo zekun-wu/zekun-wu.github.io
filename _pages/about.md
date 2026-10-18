@@ -15,20 +15,21 @@ redirect_from:
   <section id="top" class="sw-grid sw-sec sw-hero">
     <p class="sw-label sw-red sw-sec-label">01 — Research</p>
     <h1>Human–AI interaction.</h1>
-    <p class="sw-hero-lede">How do people stay in control of AI they depend on? I design interfaces that make AI agents' behavior legible and steerable, and build systems that sense when people are attending, trusting, or losing track.</p>
-    <aside class="sw-rail" aria-label="Research threads">
-      <p class="sw-label sw-mute">Two threads</p>
-      <a href="#about" class="sw-rail-item">
-        <i class="sw-rail-sq sw-rail-sq--a" aria-hidden="true"></i>
-        <span class="sw-rail-key">A</span>
-        <span class="sw-rail-txt">Overseeing AI agents<small>Preview · review · steer</small></span>
-      </a>
-      <a href="#about" class="sw-rail-item">
-        <i class="sw-rail-sq sw-rail-sq--b" aria-hidden="true"></i>
-        <span class="sw-rail-key">B</span>
-        <span class="sw-rail-txt">Sensing attention &amp; reliance<small>Gaze · behavior · timing</small></span>
-      </a>
-      <p class="sw-rail-foot">↓ 02 — About</p>
+    <p class="sw-hero-lede">How do people stay in control of AI they depend on? I work on this question in two threads: interfaces that make AI agents' behavior legible and steerable, and systems that sense when people are attending, trusting, or losing track.</p>
+    <aside class="sw-fork" aria-label="Two research threads">
+      <p class="sw-fork-head"><i class="sw-fork-root" aria-hidden="true"></i><span class="sw-label sw-mute">Two threads</span></p>
+      <ol class="sw-fork-list">
+        <li class="sw-fork-item">
+          <i class="sw-fork-branch" aria-hidden="true"></i>
+          <span class="sw-fork-idx">A</span>
+          <span class="sw-fork-txt"><strong>Overseeing AI agents</strong><small>Preview · review · steer</small></span>
+        </li>
+        <li class="sw-fork-item">
+          <i class="sw-fork-branch" aria-hidden="true"></i>
+          <span class="sw-fork-idx">B</span>
+          <span class="sw-fork-txt"><strong>Sensing attention and reliance</strong><small>Gaze · behavior · timing</small></span>
+        </li>
+      </ol>
     </aside>
   </section>
 
@@ -40,21 +41,7 @@ redirect_from:
       <p class="sw-portrait-cap">Saarbrücken, Germany</p>
     </div>
     <div class="sw-bio">
-      <p>I'm a Ph.D. student at the <a href="https://cix.cs.uni-saarland.de/" class="sw-u">Computational Interaction Lab</a>, Saarland University, Germany. My research centers on <strong>human–AI interaction</strong>, in two threads.</p>
-      <div class="sw-thread">
-        <span class="sw-thread-key">A</span>
-        <div>
-          <p class="sw-thread-title">Overseeing AI agents</p>
-          <p class="sw-thread-body">Interfaces that let people anticipate, review, and steer what an agent does — previewing its next actions before they happen, and turning its execution traces into workflows a person can inspect, correct, and reuse.</p>
-        </div>
-      </div>
-      <div class="sw-thread">
-        <span class="sw-thread-key">B</span>
-        <div>
-          <p class="sw-thread-title">Sensing attention and reliance on AI</p>
-          <p class="sw-thread-body">Gaze and behavioral signals as a real-time measurement layer for oversight: detecting what people attend to, when they over- or under-rely on AI support, and when assistance should step in.</p>
-        </div>
-      </div>
+      <p>I'm a Ph.D. student at the <a href="https://cix.cs.uni-saarland.de/" class="sw-u">Computational Interaction Lab</a>, Saarland University, Germany, where my research centers on <strong>human–AI interaction</strong>.</p>
       <p class="sw-bio-note">I also have prior research experience in human reliability analysis and data visualization.</p>
     </div>
   </section>
